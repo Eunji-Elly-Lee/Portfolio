@@ -4,7 +4,39 @@
 * {
   margin: 0;
   padding: 0;
+  letter-spacing: 1px;
 }
-body {
+body {  
   font-family: 'Aleo', serif;
+}
+.wrapper {
+  background-image: linear-gradient(
+    to bottom,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #89a5e9,
+    #79afee,
+    #6bb9f0,
+    #5ac5f1,
+    #52d0ed,
+    #59dae6,
+    #6ce3dc
+  );
+  background-size: 200% 200%;
+  animation: backgroundChange 20s linear infinite; 
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
