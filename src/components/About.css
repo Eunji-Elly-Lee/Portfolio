@@ -1,0 +1,14 @@
+.profile {
+    margin-top: 80px;
+  }
+  .button {
+    width: 160px;
+    margin-right: 5px;
+  }
+  .snap {
+    max-width: 100%;
+    max-height: 520px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  
