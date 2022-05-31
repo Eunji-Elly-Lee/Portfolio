@@ -1,14 +1,40 @@
-.profile {
+#about {
+  padding: 20px 0;
+}
+.button {
+  width: 160px;
+  margin: 2px 5px 2px 0;
+}
+.snap {
+  text-align: center;
+}
+.snap img {
+  display: none;
+  max-width: 90%;
+  max-height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 354px) {
+  .snap img {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .snap img {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {  
+  .profile {
     margin-top: 80px;
   }
-  .button {
-    width: 160px;
-    margin-right: 5px;
-  }
-  .snap {
+  .snap img {
     max-width: 100%;
     max-height: 520px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
   }
-  
+}
