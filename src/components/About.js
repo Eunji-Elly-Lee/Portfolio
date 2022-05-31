@@ -25,8 +25,8 @@ function About() {
               <Button className="button" variant="outline-success" href="#projects">See My Projects</Button>
             </div>
           </Col>
-          <Col md>
-            <img className="snap" alt="snapshot" src={snapshot} />
+          <Col md className="snap">
+            <img alt="snapshot" src={snapshot} />
           </Col>
         </Row>
       </Container>
