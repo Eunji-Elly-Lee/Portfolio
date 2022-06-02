@@ -1,9 +1,13 @@
 #about {
   padding: 20px 0;
 }
+h1 {
+  font-weight: bold;
+}
 .button {
   width: 160px;
-  margin: 2px 5px 2px 0;
+  margin: 2px 5px 2px 0;  
+  font-weight: 500;
 }
 .snap {
   text-align: center;
