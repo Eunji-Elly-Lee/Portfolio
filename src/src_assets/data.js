@@ -13,7 +13,7 @@ export const projects = [
     description:
       "Implemented home item management system including user data management",
     image: "../src_assets/inventory.png",
-    link: "",
+    link: "http://3.96.237.87:8080/InventoryManagement/",
   },
   {
     title: "Searching Dataset",
@@ -21,7 +21,7 @@ export const projects = [
     description:
       "Provided the search function for data about city operations published by the city of Calgary",
     image: "../src_assets/searching.png",
-    link: "",
+    link: "https://elly-search-dataset.netlify.app/",
   },
   {
     title: "Medical Appointment",
@@ -29,6 +29,6 @@ export const projects = [
     description:
       "Implemented appointment booking and management system including patients and staff data management",
     image: "../src_assets/medical.png",
-    link: "",
+    link: "http://3.96.237.87:8080/capstone/",
   },
 ];
