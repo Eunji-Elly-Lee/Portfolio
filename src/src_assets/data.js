@@ -9,15 +9,15 @@ export const projects = [
   },
   {
     title: "Inventory Management",
-    subtitle: "JSP / Servlet / MySQL / Apache tomcat",
+    subtitle: "JSP / Servlet / MySQL / Apache tomcat / AWS",
     description:
       "Implemented home item management system including user data management",
     image: "../src_assets/inventory.png",
-    link: "http://3.96.237.87:8080/InventoryManagement/",
+    link: "http://3.96.237.87:8080/Inventory-Management/",
   },
   {
     title: "Searching Dataset",
-    subtitle: "JavaScript / AJAX",
+    subtitle: "JavaScript / AJAX / Netlify",
     description:
       "Provided the search function for data about city operations published by the city of Calgary",
     image: "../src_assets/searching.png",
@@ -29,6 +29,6 @@ export const projects = [
     description:
       "Implemented appointment booking and management system including patients and staff data management",
     image: "../src_assets/medical.png",
-    link: "http://3.96.237.87:8080/capstone/",
+    link: "http://3.96.237.87:8080/Medical-Appointment/",
   },
 ];
