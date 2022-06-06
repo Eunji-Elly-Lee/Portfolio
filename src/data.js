@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "Jekyll / Markdown",
     description:
       "Posted basics and core concepts of Java and Python",
-    image: "../src_assets/blog.png",
+    image: "./assets/blog.png",
     link: "https://eunji-elly-lee.github.io/",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "JSP / Servlet / MySQL / Apache tomcat / AWS",
     description:
       "Implemented home item management system including user data management",
-    image: "../src_assets/inventory.png",
+    image: "./assets/inventory.png",
     link: "http://3.96.237.87:8080/Inventory-Management/",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "JavaScript / AJAX / Netlify",
     description:
       "Provided the search function for data about city operations published by the city of Calgary",
-    image: "../src_assets/searching.png",
+    image: "./assets/searching.png",
     link: "https://elly-search-dataset.netlify.app/",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     subtitle: "JSP / Servlet / MySQL / Apache tomcat / AWS",
     description:
       "Implemented appointment booking and management system including patients and staff data management",
-    image: "../src_assets/medical.png",
+    image: "./assets/medical.png",
     link: "http://3.96.237.87:8080/Medical-Appointment/",
   },
 ];
