@@ -1,6 +1,5 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './About.css';
-import snapshot from '../src_assets/snapshot.jpg';
 
 function About() {
   return (
@@ -26,7 +25,7 @@ function About() {
             </div>
           </Col>
           <Col md className="snap">
-            <img alt="snapshot" src={snapshot} />
+            <img alt="snapshot" src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`} />
           </Col>
         </Row>
       </Container>
