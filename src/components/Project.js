@@ -22,7 +22,7 @@ Project.propTypes = {
   image: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  describe: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   code: PropTypes.string.isRequired,
 }
