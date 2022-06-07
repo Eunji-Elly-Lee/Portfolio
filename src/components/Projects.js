@@ -1,5 +1,5 @@
+import { HiOutlineLightBulb } from "react-icons/hi";
 import { Container, Row } from 'react-bootstrap';
-import { MdWeb } from "react-icons/md";
 import { projects } from "../data";
 import './Projects.css';
 import Project from "./Project"
@@ -7,18 +7,19 @@ import Project from "./Project"
 function Projects() {
   return (
     <section id="projects">
-      <div>
-        <MdWeb />
+      <div>       
         <h1>
-          My projects
+          <HiOutlineLightBulb className="mb-2 mb-sm-3 me-2" />
+          My Projects
         </h1>
-        <p>
+        <p className="section-description">
           I am dedicated to self-development and professional growth and
+          <br />
           have continuously worked on projects in GitHub using various languages.
         </p>
       </div>
       <Container> 
-        <Row>      
+        <Row className="justify-content-center">      
           {projects.map((project) => (
             <Project 
               key={project.title}
