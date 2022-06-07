@@ -6,7 +6,7 @@ function About() {
     <section id="about">
       <Container>
         <Row>
-          <Col md className="profile">
+          <Col md="8" className="profile pt-2">
             <h1>
               Hi, I'm Eunji Elly Lee.
               <br />
@@ -20,11 +20,15 @@ function About() {
               Also, making applications awesome using Bootstrap and CSS is so much fun for me.
             </p>
             <div>
-              <Button className="button" variant="success" href="#contact">Work With Me</Button>
-              <Button className="button" variant="outline-success" href="#projects">See My Projects</Button>
+              <Button className="button my-1 me-1" variant="success" href="#contact">
+                Work With Me
+              </Button>
+              <Button className="button" variant="outline-success" href="#projects">
+                See My Projects
+              </Button>
             </div>
           </Col>
-          <Col md className="snap">
+          <Col md="4" className="snap text-center align-self-center">
             <img alt="snapshot" src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`} />
           </Col>
         </Row>
