@@ -15,9 +15,11 @@ function About() {
             <p>
               I'm a new graduate who successfully completed the Software Development major
               in the Information Technology program at SAIT.
-              I truly enjoy writing code and developing websites and web applications
-              using Java, JavaScript, Python, React, and SQL.
-              Also, making applications awesome using Bootstrap and CSS is so much fun for me.
+              It's fascinating to be able to create new and wonderful deliverables
+              using well-organized and easy-to-read code.
+              In particular, I enjoy being creative while playing and experimenting with code
+              to solve problems and build solutions.
+              I am determined and find it rewarding to write logical, organized and efficient code.
             </p>
             <div>
               <Button className="button my-1 me-1" variant="success" href="#contact">
