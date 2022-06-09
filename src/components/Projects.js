@@ -7,7 +7,7 @@ import Project from "./Project"
 function Projects() {
   return (
     <section id="projects">
-      <div>       
+      <div>
         <h1>
           <HiOutlineLightBulb className="mb-2 mb-sm-3 me-2" />
           My Projects
@@ -18,10 +18,10 @@ function Projects() {
           have continuously worked on projects in GitHub using various languages.
         </p>
       </div>
-      <Container> 
-        <Row className="justify-content-center">      
+      <Container>
+        <Row className="justify-content-center">
           {projects.map((project) => (
-            <Project 
+            <Project
               key={project.title}
               image={project.image}
               subtitle={project.subtitle}
@@ -30,9 +30,9 @@ function Projects() {
               link={project.link}
               code={project.code}
             />
-          ))}    
-          </Row>      
-        </Container>
+          ))}
+        </Row>
+      </Container>
     </section>
   );
 }
