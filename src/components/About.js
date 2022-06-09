@@ -6,7 +6,7 @@ function About() {
     <section id="about">
       <Container>
         <Row>
-          <Col md="8" className="profile pt-2 pt-xl-3">
+          <Col md="8" className="profile pt-2">
             <h1>
               Hi, I'm Eunji Elly Lee.
               <br />
