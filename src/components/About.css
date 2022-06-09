@@ -8,7 +8,7 @@
 .snap img {
   display: none;
   width: 100%;
-  max-width: 210px;
+  max-width: 250px;
 }
 
 @media screen and (min-width: 768px) {
