@@ -1,0 +1,16 @@
+#skills {
+    padding: 45px 0;
+    text-align: center;
+}
+#skills h2 {
+    color: rgb(169, 215, 255);
+}
+.icon {
+    display: none;
+}
+
+@media screen and (min-width:433px) {
+    .icon {
+        display: inline-block;
+    }
+}
