@@ -8,7 +8,7 @@
     text-align: left;
 }
 .image-wrap {
-    height: 200px;    
+    height: 200px;
 }
 .image-wrap img {
     width: 100%;
@@ -23,7 +23,7 @@
         position: relative;
     }
     .description {
-        position: relative;        
+        position: relative;
         background-color: rgba(0, 0, 0, 0.8);
         color: rgb(169, 215, 255);
         height: 100%;
@@ -31,7 +31,7 @@
         text-align: center;
     }
     .image-wrap {
-        height:auto;    
+        height:auto;
     }
     .image-wrap img {
         position: absolute;
