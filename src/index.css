@@ -6,7 +6,7 @@
   padding: 0;
   font-weight: 500;
 }
-body {  
+body {
   font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
@@ -17,7 +17,7 @@ p {
 }
 .wrapper {
   background-image: linear-gradient(
-    to bottom,
+    to top,
     #d16ba5,
     #c777b9,
     #ba83ca,
@@ -48,7 +48,7 @@ p {
   }
 }
 
-@media screen and (min-width:576px) {  
+@media screen and (min-width:576px) {
   p {
     font-size: 20px;
   }
