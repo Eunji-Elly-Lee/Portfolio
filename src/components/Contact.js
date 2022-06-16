@@ -26,6 +26,9 @@ function Contact() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (name === "" && email === "" && message === "") {
+      return;
+    }
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -55,7 +58,8 @@ function Contact() {
             </div>
           </Col>
           <Col md="5" className="form-wrap pt-3 pb-4">
-            <form netlify name="contact" onSubmit={handleSubmit}>
+            <form name="contact" onSubmit={handleSubmit}>
+              <input type="hidden" name="form-name" value="contact" />
               <h2>Hello!</h2>
               <p>
                 I am looking forward to this great opportunity
