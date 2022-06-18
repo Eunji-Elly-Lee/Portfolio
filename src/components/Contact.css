@@ -1,45 +1,61 @@
+h4 {
+  margin: 7px 0 0;
+}
 label {
-    width: 68px;
-    margin-bottom: 10px;
-    vertical-align: top;
+  width: 68px;
+  margin-bottom: 10px;
+  vertical-align: top;
 }
 input,
 textarea {
-    width: 75%;
+  width: 75%;
 }
 #contact {
-    padding: 45px 0 80px;
+  padding: 45px 0 80px;
 }
 #contact h1 {
-    text-align: center;
+  text-align: center;
 }
 .map {
-    width: 100%;
-    height: 280px;
-    margin: 2px 0 15px;
+  width: 100%;
+  height: 280px;
+  margin: 2px 0 15px;
+  inset: 0;
 }
 
 @media screen and (min-width: 768px) {
-    .map {
-        height: 100%;
-        margin: 0px;
-    }
+  .map-wrap {
+    position: relative;
+  }
+  .map {
+    position: absolute;
+    height: 100%;
+    margin: 0px;
+  }
+  .info {
+    position: relative;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(169, 215, 255);
+    margin: 40% 0 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .map-wrap {
-      padding-left: 5%;
-    }
-    .form-wrap {
-        padding-right: 5%;
-    }
+  .info {
+    width: 75%;
+    margin-top: 35%;
   }
-  
-  @media screen and (min-width: 1200px) {
-    .map-wrap {
-      padding-left: 8%;
-    }
-    .form-wrap {
-      padding-right: 8%;
-    }
+}
+
+@media screen and (min-width: 1200px) {
+  .info {
+    margin-top: 30%;
   }
+}
+
+@media screen and (min-width: 1400px) {
+  .info {
+    margin-top: 27%;
+  }
+}
