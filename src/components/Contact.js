@@ -48,16 +48,38 @@ function Contact() {
       </div>
       <Container>
         <Row>
-          <Col md="7" className="map-wrap">
+          <Col md="7" lg="6" className="map-wrap ms-lg-5">
             <div className="map">
               <GoogleMapReact
-                bootstrapURLKeys={{ key: "AIzaSyBon6OoczyZU8dza4yDw-CsfyzJjXgVNKQ" }}
+                bootstrapURLKeys={{ key: "" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
               />
             </div>
+            <Container className="info">
+              <Row>
+                <Col>
+                  <h4>ADDRESS</h4>
+                  <p>
+                    1315 Ranchlands
+                    <br />
+                    Rd NW
+                    <br />
+                    Calgary, AB
+                  </p>
+                </Col>
+                <Col>
+                  <h4>EMAIL</h4>
+                  <a href="mailto:eunji.lee@edu.sait.ca">
+                    eunji.lee@edu.sait.ca
+                  </a>
+                  <h4>PHONE</h4>
+                  <p>825-365-9828</p>
+                </Col>
+              </Row>
+            </Container>
           </Col>
-          <Col md="5" className="form-wrap pt-3 pb-4">
+          <Col md="5" className="py-3 ps-lg-4">
             <form name="contact" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <h2>Hello!</h2>
@@ -88,7 +110,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="label">
+                <label htmlFor="message">
                   Message
                 </label>
                 <textarea
