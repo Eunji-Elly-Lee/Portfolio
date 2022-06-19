@@ -10,7 +10,7 @@ function Contact() {
       lat: 51.1203028,
       lng: -114.1973809
     },
-    zoom: 15
+    zoom: 14
   };
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -79,7 +79,7 @@ function Contact() {
               </Row>
             </Container>
           </Col>
-          <Col md="5" className="py-3 ps-lg-4">
+          <Col md="5" className="py-3 ps-lg-4 ps-xl-5">
             <form name="contact" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <h2>Hello!</h2>
