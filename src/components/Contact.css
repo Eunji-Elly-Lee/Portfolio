@@ -53,6 +53,9 @@ textarea {
     width: 90%;
     margin: 0 auto;
   }
+  .info {
+    margin-top: 33%;
+  }
 }
 
 @media screen and (min-width: 1400px) {
