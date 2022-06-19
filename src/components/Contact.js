@@ -47,8 +47,8 @@ function Contact() {
         </h1>
       </div>
       <Container>
-        <Row>
-          <Col md="7" lg="6" className="map-wrap ms-lg-5">
+        <Row className="d-flex justify-content-center mt-3">
+          <Col md="7" lg="6" className="map-wrap ms-lg-4">
             <div className="map">
               <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
@@ -79,7 +79,7 @@ function Contact() {
               </Row>
             </Container>
           </Col>
-          <Col md="5" className="py-3 ps-lg-4 ps-xl-5">
+          <Col md="5" className="py-3 ps-lg-4">
             <form name="contact" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
               <h2>Hello!</h2>
