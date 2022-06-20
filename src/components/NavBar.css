@@ -1,0 +1,21 @@
+.scrolling {
+    padding: 2px 5% 2px 7%;
+    transition: 0.5s;
+}
+.scrolling span {
+    color: rgb(169, 215, 255);
+}
+.mouse-hover {
+    padding: 15px 5% 5px 7%;
+    transition: 0.5s;
+}
+.mouse-hover span {
+    color: rgb(169, 215, 255);
+    font-size: larger;
+}
+.default {
+    padding: 15px 5% 5px 7%;
+}
+.default span {
+    font-size: larger;
+}
