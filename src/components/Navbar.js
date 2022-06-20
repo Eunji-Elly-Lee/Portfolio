@@ -58,10 +58,10 @@ function NavBar() {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="https://www.linkedin.com/in/eunji-elly-lee/" target="_blank">
+            <Nav.Link href="https://www.linkedin.com/in/eunji-elly-lee/" target="_blank" active="true">
               <span><BsLinkedin /></span>
             </Nav.Link>
-            <Nav.Link href="https://github.com/Eunji-Elly-Lee" target="_blank">
+            <Nav.Link href="https://github.com/Eunji-Elly-Lee" target="_blank" active="true">
              <span><BsGithub /></span>
             </Nav.Link>
           </Nav>
