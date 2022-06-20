@@ -44,5 +44,6 @@
     }
     .description:hover {
         opacity: 100;
+        transition: 0.5s;
     }
 }
