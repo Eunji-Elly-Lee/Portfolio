@@ -34,7 +34,12 @@ function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => 
+        alert("Message sent!"),
+        setName(""),
+        setEmail(""),
+        setMessage(""),
+      )
       .catch((error) => alert(error));
   }
 
@@ -95,6 +100,7 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
+                  value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -106,6 +112,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -116,6 +123,7 @@ function Contact() {
                 <textarea
                   id="message"
                   name="message"
+                  value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
