@@ -3,12 +3,17 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { MdOutlineContactMail } from "react-icons/md";
 import GoogleMapReact from 'google-map-react';
 import './Contact.css';
+import Marker from "./Marker";
 
 function Contact() {
   const defaultProps = {
     center: {
-      lat: 51.1203028,
-      lng: -114.1973809
+      lat: 51.119,
+      lng: -114.195,
+    },
+    location: {
+      lat: 51.12031864514217,
+      lng: -114.19514482867221,
     },
     zoom: 14
   };
@@ -59,7 +64,12 @@ function Contact() {
                 bootstrapURLKeys={{ key: "" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
-              />
+              >
+                <Marker
+                  lat={defaultProps.location.lat}
+                  lng={defaultProps.location.lng}
+                />
+              </GoogleMapReact>
             </div>
             <Container className="info pt-3">
               <Row>
