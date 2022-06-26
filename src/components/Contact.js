@@ -61,24 +61,25 @@ function Contact() {
                 defaultZoom={defaultProps.zoom}
               />
             </div>
-            <Container className="info">
+            <Container className="info pt-3">
               <Row>
-                <Col>
+                <Col xs="7" className="align-self-center">
                   <h4>ADDRESS</h4>
+                  <h5>ADDRESS</h5>
                   <p>
-                    1315 Ranchlands
+                    1315 Ranchlands Rd NW
                     <br />
-                    Rd NW
-                    <br />
-                    Calgary, AB
+                    Calgary, AB T3G 1N2
                   </p>
                 </Col>
                 <Col>
                   <h4>EMAIL</h4>
+                  <h5>EMAIL</h5>
                   <a href="mailto:eunji.lee@edu.sait.ca">
                     eunji.lee@edu.sait.ca
                   </a>
                   <h4>PHONE</h4>
+                  <h5>PHONE</h5>
                   <p>825-365-9828</p>
                 </Col>
               </Row>
