@@ -1,10 +1,14 @@
 import { GrTechnology } from "react-icons/gr";
 import { Container, Row, Col } from 'react-bootstrap';
 import {
-  FaJava, FaJs, FaReact, FaHtml5, FaCss3Alt,
-  FaBootstrap,FaPython, FaGithub, FaAws
+  FaNode, FaReact, FaJs, FaHtml5, FaCss3Alt,
+  FaBootstrap, FaJava, FaPython, FaGithub, FaAws,
+  FaStripe
 } from "react-icons/fa";
-import { SiOracle, SiMysql, SiNetlify } from "react-icons/si";
+import {
+  SiOracle, SiMysql, SiFirebase, SiNetlify,
+  SiAdobexd, SiCanva
+} from "react-icons/si";
 import './Skills.css';
 
 function Skills() {
@@ -29,20 +33,20 @@ function Skills() {
         <Row className="justify-content-center">
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <FaJava className="icon mb-2 mb-sm-2 me-2" />
-              Java
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
-              <FaJs className="icon mb-2 mb-sm-2 me-2" />
-              JavaScript
+              <FaNode className="icon mb-2 mb-sm-2 me-2" />
+              Node.js
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
               <FaReact className="icon mb-2 mb-sm-2 me-2" />
               React
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <FaJs className="icon mb-2 mb-sm-2 me-2" />
+              JavaScript
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -65,8 +69,20 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
+              <FaJava className="icon mb-2 mb-sm-2 me-2" />
+              Java
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
               <FaPython className="icon mb-2 mb-sm-2 me-2" />
               Python
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <FaGithub className="icon mb-2 mb-sm-2 me-2" />
+              GitHub
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -83,8 +99,8 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <FaGithub className="icon mb-2 mb-sm-2 me-2" />
-              GitHub
+              <SiFirebase className="icon mb-2 mb-sm-2 me-2" />
+              Firebase
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -97,6 +113,24 @@ function Skills() {
             <h2>
               <SiNetlify className="icon mb-2 mb-sm-2 me-2" />
               Netlify
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <FaStripe className="icon mb-2 mb-sm-2 me-2" />
+              Stripe
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiAdobexd className="icon mb-2 mb-sm-2 me-2" />
+              AdobeXd
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiCanva className="icon mb-2 mb-sm-2 me-2" />
+              Canva
             </h2>
           </Col>
         </Row>
