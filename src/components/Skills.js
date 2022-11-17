@@ -6,8 +6,8 @@ import {
   FaStripe
 } from "react-icons/fa";
 import {
-  SiOracle, SiMysql, SiFirebase, SiNetlify,
-  SiAdobexd, SiCanva
+  SiRedux, SiOracle, SiMysql, SiMongodb, SiNetlify,
+  SiFirebase, SiAdobexd, SiCanva
 } from "react-icons/si";
 import './Skills.css';
 
@@ -22,7 +22,7 @@ function Skills() {
         <p className="section-description">
           I truly enjoy writing code and developing websites and web applications
           <br />
-          using Java, JavaScript, Python, React, and SQL.
+          using various languages and databases.
           <br />
           Also, making applications awesome using Bootstrap and CSS is so much fun for me.
           <br />
@@ -41,6 +41,12 @@ function Skills() {
             <h2>
               <FaReact className="icon mb-2 mb-sm-2 me-2" />
               React
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiRedux className="icon mb-2 mb-sm-2 me-2" />
+              Redux
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -81,12 +87,6 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <FaGithub className="icon mb-2 mb-sm-2 me-2" />
-              GitHub
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
               <SiOracle className="icon mb-2 mb-sm-2 me-2" />
               Oracle
             </h2>
@@ -99,8 +99,14 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <SiFirebase className="icon mb-2 mb-sm-2 me-2" />
-              Firebase
+              <SiMongodb className="icon mb-2 mb-sm-2 me-2" />
+              MongoDB
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <FaGithub className="icon mb-2 mb-sm-2 me-2" />
+              GitHub
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -113,6 +119,12 @@ function Skills() {
             <h2>
               <SiNetlify className="icon mb-2 mb-sm-2 me-2" />
               Netlify
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiFirebase className="icon mb-2 mb-sm-2 me-2" />
+              Firebase
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
