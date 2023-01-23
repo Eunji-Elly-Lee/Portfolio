@@ -13,8 +13,9 @@ function About() {
               I love to write code!
             </h1>
             <p>
-              I'm a new graduate who successfully completed the Software Development major
-              in the Information Technology program at SAIT.
+              I graduated and successfully completed the Software Development major
+              in the Information Technology program at Southern Alberta Institute of Technology
+              with excellent grades.
               It's fascinating to be able to create new and wonderful deliverables
               using well-organized and easy-to-read code.
               In particular, I enjoy being creative while playing and experimenting with code
