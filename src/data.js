@@ -1,9 +1,18 @@
 export const projects = [
   {
+    title: "Restaurant Reviews",
+    subtitle: "React / Node / Express / MongoDB / AWS",
+    description:
+      "Restaurant list application which included search, user authority, and review management functionalities",
+    image: "./assets/restaurants.png",
+    link: "http://3.99.220.142:3000/",
+    code: "https://github.com/Eunji-Elly-Lee/Restaurant-Reviews",
+  },
+  {
     title: "Food Ordering",
     subtitle: "React / Node / Express / Stripe / Firebase / Netlify",
     description:
-      "Implemented food ordering application including payment system, menu management, and order histories",
+      "Food ordering application which included payment system, menu management, and order histories",
     image: "./assets/food.png",
     link: "https://elly-gimbap.netlify.app/",
     code: "https://github.com/Eunji-Elly-Lee/Gimbap",
