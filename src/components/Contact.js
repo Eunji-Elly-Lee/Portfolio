@@ -61,7 +61,7 @@ function Contact() {
           <Col md="7" lg="6" className="map-wrap ms-lg-4">
             <div className="map">
               <GoogleMapReact
-                bootstrapURLKeys={{ key: "" }}
+                bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAP_URL_KEY }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
               >
