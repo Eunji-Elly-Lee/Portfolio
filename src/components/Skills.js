@@ -1,13 +1,12 @@
 import { GrTechnology } from "react-icons/gr";
 import { Container, Row, Col } from 'react-bootstrap';
 import {
-  FaNode, FaReact, FaJs, FaHtml5, FaCss3Alt,
-  FaBootstrap, FaJava, FaPython, FaGithub, FaAws,
-  FaStripe
+  FaNode, FaReact, FaJs, FaJava, FaPython, FaAws,
+  FaGithub, FaStripe
 } from "react-icons/fa";
 import {
   SiRedux, SiOracle, SiMysql, SiMongodb, SiNetlify,
-  SiFirebase, SiAdobexd, SiCanva
+  SiFirebase, SiAdobexd, SiCanva, SiJekyll, SiDisqus
 } from "react-icons/si";
 import './Skills.css';
 
@@ -22,7 +21,7 @@ function Skills() {
         <p className="section-description">
           I truly enjoy writing code and developing websites and web applications
           <br />
-          using various languages and databases.
+          using various languages, tools, and databases.
           <br />
           Also, making applications awesome using Bootstrap and CSS is so much fun for me.
           <br />
@@ -57,24 +56,6 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <FaHtml5 className="icon mb-2 mb-sm-2 me-2" />
-              HTML
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
-              <FaCss3Alt className="icon mb-2 mb-sm-2 me-2" />
-              CSS
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
-              <FaBootstrap className="icon mb-2 mb-sm-2 me-2" />
-              Bootstrap
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
               <FaJava className="icon mb-2 mb-sm-2 me-2" />
               Java
             </h2>
@@ -105,12 +86,6 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <FaGithub className="icon mb-2 mb-sm-2 me-2" />
-              GitHub
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
               <FaAws className="icon mb-2 mb-sm-2 me-2" />
               AWS
             </h2>
@@ -129,8 +104,8 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
             <h2>
-              <FaStripe className="icon mb-2 mb-sm-2 me-2" />
-              Stripe
+              <FaGithub className="icon mb-2 mb-sm-2 me-2" />
+              GitHub
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -143,6 +118,24 @@ function Skills() {
             <h2>
               <SiCanva className="icon mb-2 mb-sm-2 me-2" />
               Canva
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiJekyll className="icon mb-2 mb-sm-2 me-2" />
+              Jekyll
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiDisqus className="icon mb-2 mb-sm-2 me-2" />
+              Disqus
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <FaStripe className="icon mb-2 mb-sm-2 me-2" />
+              Stripe
             </h2>
           </Col>
         </Row>
