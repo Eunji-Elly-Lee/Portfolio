@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Restaurant list application which included search, user authority, and review management functionalities",
     image: "./assets/restaurants.png",
-    link: "http://3.99.220.142:3000/",
+    link: "http://15.156.14.104:3000/",
     code: "https://github.com/Eunji-Elly-Lee/Restaurant-Reviews",
   },
   {
