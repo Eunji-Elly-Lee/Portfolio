@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Restaurant list application which included search, user authority, and review management functionalities",
     image: "./assets/restaurants.png",
-    link: "http://15.156.14.104:3000/",
+    link: "https://sorry-updating.netlify.app/",
     code: "https://github.com/Eunji-Elly-Lee/Restaurant-Reviews",
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     description:
       "Implemented appointment booking and management system including patients and staff data management functionalities",
     image: "./assets/medical.png",
-    link: "http://3.96.237.87:8080/Medical-Appointment/",
+    link: "https://sorry-updating.netlify.app/",
     code: "https://github.com/Eunji-Elly-Lee/Medical-Appointment",
   },
   {
@@ -41,7 +41,7 @@ export const projects = [
     description:
       "Implemented home item management system including user data management functionalities",
     image: "./assets/inventory.png",
-    link: "http://3.96.237.87:8080/Inventory-Management/",
+    link: "https://sorry-updating.netlify.app/",
     code: "https://github.com/Eunji-Elly-Lee/Inventory-Management",
   },
   {
