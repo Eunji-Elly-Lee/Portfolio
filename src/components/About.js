@@ -8,7 +8,7 @@ function About() {
         <Row>
           <Col md="8" className="profile pt-2">
             <h1>
-              Hi, I'm Eunji Elly Lee.
+              Hi, I'm Elly Lee.
               <br />
               I love to write code!
             </h1>

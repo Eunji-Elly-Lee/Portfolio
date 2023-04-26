@@ -73,7 +73,7 @@ function Contact() {
             </div>
             <Container className="info pt-3">
               <Row>
-                <Col xs="7" className="align-self-center">
+                <Col xs="6" className="align-self-center">
                   <h4>ADDRESS</h4>
                   <h5>ADDRESS</h5>
                   <p>
@@ -85,8 +85,8 @@ function Contact() {
                 <Col>
                   <h4>EMAIL</h4>
                   <h5>EMAIL</h5>
-                  <a href="mailto:eunji.lee@edu.sait.ca">
-                    eunji.lee@edu.sait.ca
+                  <a href="mailto:ellylee2020@gmail.com">
+                    ellylee2020@gmail.com
                   </a>
                   <h4>PHONE</h4>
                   <h5>PHONE</h5>
