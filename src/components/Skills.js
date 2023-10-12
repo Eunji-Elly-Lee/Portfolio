@@ -5,8 +5,8 @@ import {
   FaGithub, FaStripe
 } from "react-icons/fa";
 import {
-  SiRedux, SiOracle, SiMysql, SiMongodb, SiNetlify,
-  SiFirebase, SiAdobexd, SiCanva, SiJekyll, SiDisqus
+  SiNextdotjs, SiTypescript, SiRedux, SiOracle, SiMysql, SiMongodb, SiNetlify,
+  SiFirebase, SiJekyll, SiDisqus
 } from "react-icons/si";
 import './Skills.css';
 
@@ -40,6 +40,18 @@ function Skills() {
             <h2>
               <FaReact className="icon mb-2 mb-sm-2 me-2" />
               React
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiNextdotjs className="icon mb-2 mb-sm-2 me-2" />
+              Next.js
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
+            <h2>
+              <SiTypescript className="icon mb-2 mb-sm-2 me-2" />
+              Typescript
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
@@ -106,18 +118,6 @@ function Skills() {
             <h2>
               <FaGithub className="icon mb-2 mb-sm-2 me-2" />
               GitHub
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
-              <SiAdobexd className="icon mb-2 mb-sm-2 me-2" />
-              AdobeXd
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
-            <h2>
-              <SiCanva className="icon mb-2 mb-sm-2 me-2" />
-              Canva
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3">
