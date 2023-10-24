@@ -27,7 +27,6 @@ function Projects() {
               subtitle={project.subtitle}
               title={project.title}
               description={project.description}
-              link={project.link}
               code={project.code}
             />
           ))}
