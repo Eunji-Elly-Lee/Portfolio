@@ -71,7 +71,7 @@ function Contact() {
                 />
               </GoogleMapReact>
             </div>
-            <Container className="info pt-3">
+            <Container className="info pt-3 rounded-2">
               <Row>
                 <Col xs="6" className="align-self-center">
                   <h4>ADDRESS</h4>

@@ -13,6 +13,8 @@ label {
 input,
 textarea {
   width: 75%;
+  border: 0.01em solid black;
+  border-radius: 3px;
 }
 #contact {
   padding: 45px 0 80px;
@@ -25,6 +27,8 @@ textarea {
   height: 280px;
   margin: 2px 0 15px;
   inset: 0;
+  border-radius: 3px;
+  overflow: hidden;
 }
 .info p {
   padding-top: 5px;
