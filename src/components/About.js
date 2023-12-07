@@ -32,7 +32,7 @@ function About() {
             </div>
           </Col>
           <Col md="4" className="snap text-center align-self-center">
-            <img alt="snapshot" src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`} />
+            <img alt="snapshot" src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`} className="rounded-2" />
           </Col>
         </Row>
       </Container>
