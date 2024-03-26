@@ -1,14 +1,30 @@
 import { GrTechnology } from "react-icons/gr";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 import {
-  FaNode, FaReact, FaJs, FaJava, FaPython, FaAws,
-  FaGithub, FaStripe
+  FaJs,
+  FaReact,
+  FaNode,
+  FaJava,
+  FaPython,
+  FaDatabase,
+  FaAws,
+  FaBootstrap,
+  FaGithub,
+  FaStripe,
 } from "react-icons/fa";
 import {
-  SiNextdotjs, SiTypescript, SiRedux, SiOracle, SiMysql, SiMongodb, SiNetlify,
-  SiFirebase, SiJekyll, SiDisqus
+  SiExpress,
+  SiNextdotjs,
+  SiTypescript,
+  SiMysql,
+  SiMongodb,
+  SiPostgresql,
+  SiSupabase,
+  SiFirebase,
+  SiNetlify,
+  SiJirasoftware,
 } from "react-icons/si";
-import './Skills.css';
+import "./Skills.css";
 
 function Skills() {
   return (
@@ -19,11 +35,10 @@ function Skills() {
           My Skills
         </h1>
         <p className="section-description">
-          I truly enjoy writing code and developing websites and web applications
+          I truly enjoy writing code and developing websites and web
+          applications
           <br />
           using various languages, tools, and databases.
-          <br />
-          Also, making applications awesome using Bootstrap and CSS is so much fun for me.
           <br />
           I'm also very excited to continue learning new skills.
         </p>
@@ -32,14 +47,26 @@ function Skills() {
         <Row className="justify-content-center">
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
+              <FaJs className="icon mb-2 mb-sm-2 me-2" />
+              JavaScript
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
+              <FaReact className="icon mb-2 mb-sm-2 me-2" />
+              React.js
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
               <FaNode className="icon mb-2 mb-sm-2 me-2" />
               Node.js
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
-              <FaReact className="icon mb-2 mb-sm-2 me-2" />
-              React
+              <SiExpress className="icon mb-2 mb-sm-2 me-2" />
+              Express.js
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
@@ -56,18 +83,6 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
-              <SiRedux className="icon mb-2 mb-sm-2 me-2" />
-              Redux
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
-            <h2>
-              <FaJs className="icon mb-2 mb-sm-2 me-2" />
-              JavaScript
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
-            <h2>
               <FaJava className="icon mb-2 mb-sm-2 me-2" />
               Java
             </h2>
@@ -80,8 +95,8 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
-              <SiOracle className="icon mb-2 mb-sm-2 me-2" />
-              Oracle
+              <FaDatabase className="icon mb-2 mb-sm-2 me-2" />
+              SQL
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
@@ -98,6 +113,24 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
+              <SiPostgresql className="icon mb-2 mb-sm-2 me-2" />
+              PostgreSQL
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
+              <SiSupabase className="icon mb-2 mb-sm-2 me-2" />
+              Supabase
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
+              <SiFirebase className="icon mb-2 mb-sm-2 me-2" />
+              Firebase
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
               <FaAws className="icon mb-2 mb-sm-2 me-2" />
               AWS
             </h2>
@@ -110,8 +143,8 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
-              <SiFirebase className="icon mb-2 mb-sm-2 me-2" />
-              Firebase
+              <FaBootstrap className="icon mb-2 mb-sm-2 me-2" />
+              Bootstrap
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
@@ -122,14 +155,8 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
-              <SiJekyll className="icon mb-2 mb-sm-2 me-2" />
-              Jekyll
-            </h2>
-          </Col>
-          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
-            <h2>
-              <SiDisqus className="icon mb-2 mb-sm-2 me-2" />
-              Disqus
+              <SiJirasoftware className="icon mb-2 mb-sm-2 me-2" />
+              Jira
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
