@@ -15,7 +15,7 @@ function Projects() {
         <p className="section-description">
           I am dedicated to self-development and professional growth and
           <br />
-          have continuously worked on projects in GitHub using various languages.
+          have continuously worked on projects using various languages.
         </p>
       </div>
       <Container>
