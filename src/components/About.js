@@ -1,38 +1,56 @@
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import './About.css';
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "./About.css";
 
 function About() {
   return (
     <section id="about">
       <Container>
         <Row>
-          <Col md="8" className="profile pt-2">
+          <Col lg="8" className="profile pt-2">
             <h1>
-              Hi, I'm Elly Lee.
+              Keep Going!
               <br />
-              I love to write code!
+              I'm Elly, a junior developer on the rise.
             </h1>
             <p>
-              I graduated and successfully completed the Software Development major
-              in the Information Technology program at Southern Alberta Institute of Technology
-              with excellent grades.
-              It's fascinating to be able to create new and wonderful deliverables
-              using well-organized and easy-to-read code.
-              In particular, I enjoy being creative while playing and experimenting with code
-              to solve problems and build solutions.
-              I am determined and find it rewarding to write logical, organized and efficient code.
+              I thrive on the excitement of learning new technologies
+              and embracing challenges head-on. One of my greatest joys is
+              crafting clean, elegant code that not only works efficiently but
+              also looks wonderful. When faced with a problem, I dive deep into
+              analysis and enjoy sharing my insights and solutions with others.
+              <br />
+              I'm always on the lookout for opportunities to share my passion
+              and collaborate with like-minded individuals. Whether it's
+              discussing the latest tech trends or tackling complex coding
+              tasks, I'm eager to engage and contribute to the vibrant developer
+              community.
+              <br />
+              Let's build something great together!
             </p>
             <div>
-              <Button className="button my-1 me-1" variant="success" href="#contact">
+              <Button
+                className="button my-1 me-1"
+                variant="success"
+                href="#contact"
+              >
                 Work With Me
               </Button>
-              <Button className="button" variant="outline-success" href="#projects">
-                See My Projects
+              <Button
+                className="button"
+                variant="outline-success"
+                href="https://elly-lee.notion.site/Elly-s-Notion-19c40f00887d4b5baad95b41fa154a9a"
+                target="_blank"
+              >
+                See My Blog
               </Button>
             </div>
           </Col>
-          <Col md="4" className="snap text-center align-self-center">
-            <img alt="snapshot" src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`} className="rounded-2" />
+          <Col lg="4" className="snap text-center align-self-center">
+            <img
+              alt="snapshot"
+              src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`}
+              className="rounded-2"
+            />
           </Col>
         </Row>
       </Container>
