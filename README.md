@@ -1,19 +1,23 @@
+## Elly's Portfolio
+
 ![upper side](/public/assets/upper_side.png)
 ![lower side](/public/assets/lower_side.png)
 
-This is a website for Elly's portfolio where users can see and contact Elly's introduction, projects, and skills.
+This website showcases my skills and experience as a web developer. Explore my projects to see my work in action, and feel free to contact me with any questions!
 
-#### [View Portfolio](https://elly-portfolio.netlify.app/)
+#### [View Portfolio Website](https://elly-portfolio.netlify.app/)
 
-## Features
-- Bright mood from the background color of the neat gradation
-- Well-organized layout for each section
-- Smooth-acting animation functionalities
-- Convenient contact form to use
-- Fully responsive website across all devices
+### Features
 
-## Used skills
-- React and JavaScript
-- HTML, CSS, and Bootstrap
-- Google Maps Platform
-- Netlify
+- **Bright and Neat Design**: Engaging background color with a neat gradation creates a pleasant mood.
+- **Well-Organized Layout**: Each section is carefully arranged for easy navigation.
+- **Smooth Animation**: Enjoy smooth and engaging animation functionalities.
+- **Convenient Contact Form**: Easily reach out to Elly through the contact form.
+- **Fully Responsive**: Experience seamless browsing across all devices.
+
+### Technologies Used
+
+- **React and JavaScript** for dynamic and interactive components.
+- **HTML, CSS, and Bootstrap** for structured and visually appealing layouts.
+- **Google Maps Platform integration** for location-based information.
+- **Netlify** for reliable deployment and hosting.
