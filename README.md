@@ -1,7 +1,7 @@
 ## Elly's Portfolio
 
-![upper side](/public/assets/upper_side.png)
-![lower side](/public/assets/lower_side.png)
+![upper side](/public/assets/screen_capture01.png)
+![lower side](/public/assets/screen_capture02.png)
 
 This website showcases my skills and experience as a web developer. Explore my projects to see my work in action, and feel free to contact me with any questions!
 
