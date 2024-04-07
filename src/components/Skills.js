@@ -13,8 +13,9 @@ import {
   FaStripe,
 } from "react-icons/fa";
 import {
-  SiExpress,
   SiNextdotjs,
+  SiExpress,
+  SiNestjs,
   SiTypescript,
   SiMysql,
   SiMongodb,
@@ -22,7 +23,9 @@ import {
   SiSupabase,
   SiFirebase,
   SiNetlify,
+  SiTailwindcss,
   SiJirasoftware,
+  SiGoogleanalytics,
 } from "react-icons/si";
 import "./Skills.css";
 
@@ -59,6 +62,12 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
+              <SiNextdotjs className="icon mb-2 mb-sm-2 me-2" />
+              Next.js
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
               <FaNode className="icon mb-2 mb-sm-2 me-2" />
               Node.js
             </h2>
@@ -71,8 +80,8 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
-              <SiNextdotjs className="icon mb-2 mb-sm-2 me-2" />
-              Next.js
+              <SiNestjs className="icon mb-2 mb-sm-2 me-2" />
+              Nest.js
             </h2>
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
@@ -149,6 +158,12 @@ function Skills() {
           </Col>
           <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
             <h2>
+              <SiTailwindcss className="icon mb-2 mb-sm-2 me-2" />
+              Tailwind
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
               <FaGithub className="icon mb-2 mb-sm-2 me-2" />
               GitHub
             </h2>
@@ -163,6 +178,12 @@ function Skills() {
             <h2>
               <FaStripe className="icon mb-2 mb-sm-2 me-2" />
               Stripe
+            </h2>
+          </Col>
+          <Col xs="5" lg="3" className="bg-dark m-2 pt-3 rounded-2">
+            <h2>
+              <SiGoogleanalytics className="icon mb-2 mb-sm-2 me-2" />
+              Google Analytics
             </h2>
           </Col>
         </Row>
