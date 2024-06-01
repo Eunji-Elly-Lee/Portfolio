@@ -10,14 +10,14 @@ function About() {
             <h1>
               Keep Going!
               <br />
-              I'm Elly, a junior developer on the rise.
+              I'm Elly, a rapidly growing developer.
             </h1>
             <p>
-              I thrive on the excitement of learning new technologies
-              and embracing challenges head-on. One of my greatest joys is
-              crafting clean, elegant code that not only works efficiently but
-              also looks wonderful. When faced with a problem, I dive deep into
-              analysis and enjoy sharing my insights and solutions with others.
+              I thrive on the excitement of learning new technologies and
+              embracing challenges head-on. One of my greatest joys is crafting
+              clean, elegant code that not only works efficiently but also looks
+              wonderful. When faced with a problem, I dive deep into analysis
+              and enjoy sharing my insights and solutions with others.
               <br />
               I'm always on the lookout for opportunities to share my passion
               and collaborate with like-minded individuals. Whether it's
