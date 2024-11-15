@@ -57,7 +57,7 @@ function NavBar() {
               <span>Contact</span>
             </Nav.Link>
           </Nav>
-          <Nav>
+          <Nav className="flex-row gap-3 gap-md-0">
             <Nav.Link href="https://www.linkedin.com/in/eunji-elly-lee/" target="_blank" active="true">
               <span><BsLinkedin /></span>
             </Nav.Link>
