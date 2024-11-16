@@ -41,7 +41,7 @@ function NavBar() {
         <Navbar.Brand href="#">
           <span>Elly Lee</span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="fs-6" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#about" active="true">
