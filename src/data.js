@@ -1,3 +1,31 @@
+import {
+  FaJs,
+  FaReact,
+  FaNode,
+  FaJava,
+  FaPython,
+  FaDatabase,
+  FaAws,
+  FaBootstrap,
+  FaGithub,
+  FaStripe,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiExpress,
+  SiNestjs,
+  SiTypescript,
+  SiMysql,
+  SiMongodb,
+  SiPostgresql,
+  SiSupabase,
+  SiFirebase,
+  SiNetlify,
+  SiTailwindcss,
+  SiJirasoftware,
+  SiGoogleanalytics,
+} from "react-icons/si";
+
 export const projects = [
   {
     title: "Restaurant Reviews",
@@ -26,8 +54,7 @@ export const projects = [
   {
     title: "Pang",
     subtitle: "Python",
-    description:
-      "Pang - Arcade Video Game in Python",
+    description: "Pang - Arcade Video Game in Python",
     image: "./assets/pang.png",
     code: "https://github.com/Eunji-Elly-Lee/Pang-In-Python",
   },
@@ -50,17 +77,41 @@ export const projects = [
   {
     title: "Hangman",
     subtitle: "Java",
-    description:
-      "Hangman game in Java",
+    description: "Hangman game in Java",
     image: "./assets/hangman.png",
     code: "https://github.com/Eunji-Elly-Lee/Hangman-In-Java",
   },
   {
     title: "Tic Tac Toe",
     subtitle: "Java",
-    description:
-      "Tic Tac Toe game in Java",
+    description: "Tic Tac Toe game in Java",
     image: "./assets/tictactoe.png",
     code: "https://github.com/Eunji-Elly-Lee/TicTacToe-In-Java",
   },
+];
+
+export const skills = [
+  { icon: FaJs, title: "JavaScript" },
+  { icon: FaReact, title: "React.js" },
+  { icon: SiNextdotjs, title: "Next.js" },
+  { icon: FaNode, title: "Node.js" },
+  { icon: SiExpress, title: "Express.js" },
+  { icon: SiNestjs, title: "Nest.js" },
+  { icon: SiTypescript, title: "Typescript" },
+  { icon: FaJava, title: "Java" },
+  { icon: FaPython, title: "Python" },
+  { icon: FaDatabase, title: "SQL" },
+  { icon: SiMysql, title: "MySQL" },
+  { icon: SiMongodb, title: "MongoDB" },
+  { icon: SiPostgresql, title: "PostgreSQL" },
+  { icon: SiSupabase, title: "Supabase" },
+  { icon: SiFirebase, title: "Firebase" },
+  { icon: FaAws, title: "AWS" },
+  { icon: SiNetlify, title: "Netlify" },
+  { icon: FaBootstrap, title: "Bootstrap" },
+  { icon: SiTailwindcss, title: "Tailwind" },
+  { icon: FaGithub, title: "GitHub" },
+  { icon: SiJirasoftware, title: "Jira" },
+  { icon: FaStripe, title: "Stripe" },
+  { icon: SiGoogleanalytics, title: "Google Analytics" },
 ];
