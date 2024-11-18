@@ -6,31 +6,37 @@
   padding: 0;
   font-weight: 500;
 }
+
 body {
   font-family: 'Josefin Sans', sans-serif;
 }
+
 h1 {
   font-weight: bold;
 }
+
 p {
   font-size: 18px;
 }
+
+span {
+  font-size: larger;
+}
+
 .wrapper {
-  background-image: linear-gradient(
-    to top,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #89a5e9,
-    #79afee,
-    #6bb9f0,
-    #5ac5f1,
-    #52d0ed,
-    #59dae6,
-    #6ce3dc
-  );
+  background-image: linear-gradient(to top,
+      #d16ba5,
+      #c777b9,
+      #ba83ca,
+      #aa8fd8,
+      #9a9ae1,
+      #89a5e9,
+      #79afee,
+      #6bb9f0,
+      #5ac5f1,
+      #52d0ed,
+      #59dae6,
+      #6ce3dc);
   background-size: 200% 200%;
   animation: backgroundChange 20s linear infinite;
 }
@@ -39,9 +45,11 @@ p {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 100% 100%;
   }
+
   100% {
     background-position: 0 0;
   }
@@ -51,7 +59,8 @@ p {
   p {
     font-size: 20px;
   }
+
   .section-description {
-      padding: 0 3% 5px;
+    padding: 0 3% 5px;
   }
 }
