@@ -5,8 +5,15 @@ function About() {
   return (
     <section id="about">
       <Container>
-        <Row>
-          <Col lg="8" className="profile pt-2">
+        <Row className="flex-row-reverse gap-4 gap-md-5 gap-lg-0">
+          <Col lg="4" className="snap text-center align-self-center">
+            <img
+              alt="snapshot"
+              src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`}
+              className="w-100 h-100 rounded-3"
+            />
+          </Col>
+          <Col lg="8" className="profile">
             <h1>
               Keep Going!
               <br />
@@ -44,13 +51,6 @@ function About() {
                 See My Blog
               </Button>
             </div>
-          </Col>
-          <Col lg="4" className="snap text-center align-self-center">
-            <img
-              alt="snapshot"
-              src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`}
-              className="rounded-2"
-            />
           </Col>
         </Row>
       </Container>

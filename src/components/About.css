@@ -1,5 +1,14 @@
 #about {
-  padding: 45px 0;
+  padding: 30px 5% 0px 7%;
+}
+
+.snap {
+  height: 200px;
+}
+
+.snap img {
+  max-width: 320px;
+  object-fit: cover;
 }
 
 .button {
@@ -7,30 +16,18 @@
   font-weight: 500;
 }
 
-.snap img {
-  display: none;
-  width: 100%;
-  max-width: 300px;
+@media screen and (min-width: 768px) {
+  #about {
+    padding: 45px 0 0;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .snap {
+    height: 100%;
+  }
+
   .profile {
     padding-left: 5%;
-  }
-
-  .snap img {
-    display: inline-block;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .profile {
-    padding-left: 6%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .profile {
-    padding-left: 8%;
   }
 }
