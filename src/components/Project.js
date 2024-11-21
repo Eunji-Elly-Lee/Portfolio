@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Project({image, subtitle, title, description, code}) {
   return (
-    <Col lg="5" className="project m-2 p-0">
+    <Col lg="5" className="position-relative m-2 p-0">
       <div className="description">
         <h5>{subtitle}</h5>
         <h2>{title}</h2>
