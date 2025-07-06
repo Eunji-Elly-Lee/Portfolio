@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { MdOutlineLanguage } from "react-icons/md";
 import "./NavBar.css";
 
-function NavBar() {
+function NavBar({ useKorean, setUseKorean }) {
   let scroll_position = 0;
   const [mouseAction, setMouseAction] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -63,13 +64,13 @@ function NavBar() {
         scrolling
           ? "bg-dark scrolling"
           : mouseAction
-          ? "bg-dark mouse-hover"
-          : "default"
+            ? "bg-dark mouse-hover"
+            : "default"
       }
     >
       <Container>
         <Navbar.Brand href="#">
-          <span>Elly Lee</span>
+          <span>{useKorean ? "이은지" : "Elly Lee"}</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -115,6 +116,9 @@ function NavBar() {
               <span>
                 <BsGithub />
               </span>
+            </Nav.Link>
+            <Nav.Link onClick={() => setUseKorean(!useKorean)}>
+              <span><MdOutlineLanguage />{useKorean ? "EN" : "KO"}</span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
