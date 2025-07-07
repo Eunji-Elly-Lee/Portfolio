@@ -10,11 +10,15 @@ function App() {
 
   return (
     <div className="wrapper">
-      <NavBar useKorean={useKorean} setUseKorean={setUseKorean} />
-      <About useKorean={useKorean} />
-      <Projects useKorean={useKorean} />
-      <Skills useKorean={useKorean} />
-      <Contact useKorean={useKorean} />
+      <header>
+        <NavBar useKorean={useKorean} setUseKorean={setUseKorean} />
+      </header>
+      <main>
+        <About useKorean={useKorean} />
+        <Projects useKorean={useKorean} />
+        <Skills useKorean={useKorean} />
+        <Contact useKorean={useKorean} />
+      </main>
     </div>
   );
 }
