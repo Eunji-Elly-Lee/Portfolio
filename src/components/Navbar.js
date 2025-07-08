@@ -61,11 +61,11 @@ function NavBar({ useKorean, setUseKorean }) {
       onMouseOver={onMouseOverOut}
       onMouseOut={onMouseOverOut}
       className={
-        scrolling
-          ? "bg-dark scrolling"
-          : mouseAction
-            ? "bg-dark mouse-hover"
+        `position-fixed w-100
+        ${scrolling ? "bg-dark scrolling"
+          : mouseAction ? "bg-dark mouse-hover"
             : "default"
+        }`
       }
     >
       <Container>
