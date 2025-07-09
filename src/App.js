@@ -13,7 +13,7 @@ function App() {
       <header>
         <NavBar useKorean={useKorean} setUseKorean={setUseKorean} />
       </header>
-      <main>
+      <main className="pt-5">
         <About useKorean={useKorean} />
         <Projects useKorean={useKorean} />
         <Skills useKorean={useKorean} />
