@@ -1,21 +1,28 @@
-.scrolling {
-    padding: 2px 5% 2px 7%;
+.nav-default {
+    padding: 22px 5% 22px 7%;
+}
+
+.nav-default button {
+    border: none;
+    background: none;
+    width: fit-content;
+}
+
+.nav-default span {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav-active {
     transition: 0.5s;
 }
 
-.scrolling span {
-    color: rgb(169, 215, 255);
+.nav-default.nav-active span {
+    color: #c0d7f4;
 }
 
-.mouse-hover {
-    padding: 15px 5% 5px 7%;
-    transition: 0.5s;
-}
-
-.mouse-hover span {
-    color: rgb(169, 215, 255);
-}
-
-.default {
-    padding: 15px 5% 5px 7%;
+.lang-toggle {
+  margin-top: 3px;
+  gap: 1px;
 }

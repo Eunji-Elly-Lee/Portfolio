@@ -1,27 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { MdOutlineLanguage } from "react-icons/md";
 import "./NavBar.css";
 
-function NavBar({ useKorean, setUseKorean }) {
-  let scroll_position = 0;
+function NavBar({ useKorean, setUseKorean, expanded, setExpanded }) {
   const [mouseAction, setMouseAction] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [expanded, setExpanded] = useState(false);
 
   const onMouseOverOut = () => {
-    if (scrolling) {
-      return;
-    }
+    if (window.innerWidth < 768) return;
+    if (scrolling) return;
     setMouseAction((current) => !current);
   };
 
   const setYOffset = () => {
     if (window.innerWidth < 768) {
-      return -220;
+      return -330;
     } else {
-      return 50;
+      return 10;
     }
   };
 
@@ -46,31 +43,36 @@ function NavBar({ useKorean, setUseKorean }) {
     }
   };
 
-  window.addEventListener("scroll", function (e) {
-    scroll_position = window.scrollY;
-    window.requestAnimationFrame(function () {
-      checkPosition(scroll_position);
-    });
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      const scroll_position = window.scrollY;
+      window.requestAnimationFrame(() => checkPosition(scroll_position));
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <Navbar
       expand="md"
       sticky="top"
       expanded={expanded}
+      onToggle={setExpanded}
       onMouseOver={onMouseOverOut}
       onMouseOut={onMouseOverOut}
       className={
-        `position-fixed w-100
-        ${scrolling ? "bg-dark scrolling"
-          : mouseAction ? "bg-dark mouse-hover"
-            : "default"
+        `position-fixed w-100 nav-default
+        ${(scrolling || mouseAction || expanded) ? "bg-dark nav-active"
+          : ""
         }`
       }
     >
       <Container>
-        <Navbar.Brand href="#">
-          <span>{useKorean ? "이은지" : "Elly Lee"}</span>
+        <Navbar.Brand href="#" onClick={() => setExpanded(false)}>
+          <span className="fs-3 fw-bold">{useKorean ? "이은지" : "Elly Lee"}</span>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -79,46 +81,36 @@ function NavBar({ useKorean, setUseKorean }) {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" onClick={() => setExpanded(false)}>
-            <Nav.Link active="true" onClick={() => onScrollToSection("about")}>
+            <Nav.Link as="button" type="button" onClick={() => onScrollToSection("about")}>
               <span>About</span>
             </Nav.Link>
-            <Nav.Link
-              active="true"
-              onClick={() => onScrollToSection("projects")}
-            >
+            <Nav.Link as="button" type="button" onClick={() => onScrollToSection("projects")}>
               <span>Projects</span>
             </Nav.Link>
-            <Nav.Link active="true" onClick={() => onScrollToSection("skills")}>
+            <Nav.Link as="button" type="button" onClick={() => onScrollToSection("skills")}>
               <span>Skills</span>
             </Nav.Link>
-            <Nav.Link
-              active="true"
-              onClick={() => onScrollToSection("contact")}
-            >
+            <Nav.Link as="button" type="button" onClick={() => onScrollToSection("contact")}>
               <span>Contact</span>
             </Nav.Link>
           </Nav>
-          <Nav className="flex-row gap-3 gap-md-0">
+          <Nav className="d-flex flex-row align-items-center gap-3 gap-md-0">
             <Nav.Link
               href="https://www.linkedin.com/in/eunji-elly-lee/"
               target="_blank"
-              active="true"
             >
-              <span>
-                <BsLinkedin />
-              </span>
+              <span><BsLinkedin /></span>
             </Nav.Link>
             <Nav.Link
               href="https://github.com/Eunji-Elly-Lee"
               target="_blank"
-              active="true"
             >
-              <span>
-                <BsGithub />
-              </span>
+              <span><BsGithub /></span>
             </Nav.Link>
-            <Nav.Link onClick={() => setUseKorean(!useKorean)}>
-              <span><MdOutlineLanguage />{useKorean ? "EN" : "KO"}</span>
+            <Nav.Link as="button" type="button" onClick={() => setUseKorean(!useKorean)}>
+              <span className="d-flex align-items-center lang-toggle">
+                <MdOutlineLanguage />{useKorean ? "EN" : "KO"}
+              </span>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
