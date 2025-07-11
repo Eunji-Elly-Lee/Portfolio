@@ -7,13 +7,23 @@ import Contact from "./components/Contact";
 
 function App() {
   const [useKorean, setUseKorean] = useState(true);
+  const [navExpanded, setNavExpanded] = useState(false);
 
   return (
     <div className="wrapper">
       <header>
-        <NavBar useKorean={useKorean} setUseKorean={setUseKorean} />
+        <NavBar
+          useKorean={useKorean}
+          setUseKorean={setUseKorean}
+          expanded={navExpanded}
+          setExpanded={setNavExpanded}
+        />
       </header>
-      <main className="pt-5">
+      <main
+        className={
+          `main-container ${navExpanded ? "main-active" : ""}`
+        }
+      >
         <About useKorean={useKorean} />
         <Projects useKorean={useKorean} />
         <Skills useKorean={useKorean} />

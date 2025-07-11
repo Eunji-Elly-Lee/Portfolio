@@ -22,10 +22,6 @@ p {
   font-size: 18px;
 }
 
-span {
-  font-size: larger;
-}
-
 .wrapper {
   background-image: linear-gradient(to top,
       #e0f2fe,
@@ -33,6 +29,15 @@ span {
       #7dd3fc);
   background-size: 200% 200%;
   animation: backgroundChange 25s linear infinite;
+}
+
+.main-container {
+  padding-top: 80px;
+}
+
+.main-active {
+  transform: translateY(300px);
+  transition: 0.5s;
 }
 
 @keyframes backgroundChange {
