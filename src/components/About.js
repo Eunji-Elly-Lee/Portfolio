@@ -10,7 +10,7 @@ function About() {
             <img
               alt="snapshot"
               src={`${process.env.PUBLIC_URL}/assets/snapshot.jpg`}
-              className="w-100 h-100 rounded-3"
+              className="w-100 h-100"
             />
           </Col>
           <Col lg="8" className="profile">

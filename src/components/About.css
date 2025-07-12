@@ -8,6 +8,7 @@
 
 .snap img {
   max-width: 320px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
