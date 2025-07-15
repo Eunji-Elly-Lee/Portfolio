@@ -39,7 +39,7 @@ function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => 
+      .then(() =>
         alert("Message sent!"),
         setName(""),
         setEmail(""),
@@ -138,7 +138,7 @@ function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-              <Button type="submit" variant="success" className="mt-2">
+              <Button type="submit" className="submit-button mt-2 py-3">
                 Submit
               </Button>
             </form>
