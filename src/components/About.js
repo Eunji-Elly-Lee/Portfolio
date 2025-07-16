@@ -38,6 +38,7 @@ function About() {
               <Button
                 className="button primary my-1 me-2 py-3"
                 href="#contact"
+                type="button"
               >
                 Work With Me
               </Button>
@@ -45,6 +46,7 @@ function About() {
                 className="button secondary py-3"
                 href="https://elly-lee.notion.site/Elly-s-Notion-19c40f00887d4b5baad95b41fa154a9a"
                 target="_blank"
+                type="button"
               >
                 See My Blog
               </Button>
