@@ -1,7 +1,30 @@
+import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./About.css";
 
 function About() {
+  const text = "Keep Going!";
+  const [displayedText, setDisplayedText] = useState("");
+  const [cursorVisible, setCursorVisible] = useState(true);
+
+useEffect(() => {
+  let index = 0;
+
+  const interval = setInterval(() => {
+    const nextChar = text[index];
+
+    if (nextChar) {
+      setDisplayedText((prev) => prev + nextChar);
+      index++;
+    } else {
+      clearInterval(interval);
+      setTimeout(() => setCursorVisible(false), 1000);
+    }
+  }, 200);
+
+  return () => clearInterval(interval);
+}, []);
+
   return (
     <section id="about">
       <Container>
@@ -14,11 +37,11 @@ function About() {
             />
           </Col>
           <Col lg="8" className="profile">
-            <h1>
-              Keep Going!
-              <br />
-              I'm Elly, a rapidly growing developer.
-            </h1>
+            <p className="fs-1 fw-bolder">
+              {displayedText}
+              {cursorVisible && <span className="typing-cursor ms-1">|</span>}
+            </p>
+            <h1>I'm Elly, a rapidly growing developer.</h1>
             <p>
               I thrive on the excitement of learning new technologies and
               embracing challenges head-on. One of my greatest joys is crafting
