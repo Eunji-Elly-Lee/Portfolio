@@ -1,29 +1,31 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { translations } from "../translations";
 import "./About.css";
 
-function About() {
+function About({ useKorean }) {
   const text = "Keep Going!";
   const [displayedText, setDisplayedText] = useState("");
   const [cursorVisible, setCursorVisible] = useState(true);
+  const getTrans = (key) => translations.about[key][useKorean ? "ko" : "en"];
 
-useEffect(() => {
-  let index = 0;
+  useEffect(() => {
+    let index = 0;
 
-  const interval = setInterval(() => {
-    const nextChar = text[index];
+    const interval = setInterval(() => {
+      const nextChar = text[index];
 
-    if (nextChar) {
-      setDisplayedText((prev) => prev + nextChar);
-      index++;
-    } else {
-      clearInterval(interval);
-      setTimeout(() => setCursorVisible(false), 1000);
-    }
-  }, 200);
+      if (nextChar) {
+        setDisplayedText((prev) => prev + nextChar);
+        index++;
+      } else {
+        clearInterval(interval);
+        setTimeout(() => setCursorVisible(false), 1000);
+      }
+    }, 200);
 
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="about">
@@ -41,25 +43,15 @@ useEffect(() => {
               {displayedText}
               {cursorVisible && <span className="typing-cursor ms-1">|</span>}
             </p>
-            <h1>I'm Elly, a rapidly growing developer.</h1>
-            <p>
-              I thrive on the excitement of learning new technologies and
-              embracing challenges head-on. One of my greatest joys is crafting
-              clean, elegant code that not only works efficiently but also looks
-              wonderful. When faced with a problem, I dive deep into analysis
-              and enjoy sharing my insights and solutions with others.
+            <h1>{getTrans("title")}</h1>
+            <p className={`mt-3 mb-4 ${useKorean ? "mb-md-5" : ""}`}>
+              {getTrans("paragraph1")}
               <br />
-              I'm always on the lookout for opportunities to share my passion
-              and collaborate with like-minded individuals. Whether it's
-              discussing the latest tech trends or tackling complex coding
-              tasks, I'm eager to engage and contribute to the vibrant developer
-              community.
-              <br />
-              Let's build something great together!
+              {getTrans("paragraph2")}
             </p>
             <div>
               <Button
-                className="button primary my-1 me-2 py-3"
+                className="button primary me-2 py-3"
                 href="#contact"
                 type="button"
               >
