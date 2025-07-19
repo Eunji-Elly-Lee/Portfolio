@@ -8,10 +8,10 @@ function Projects() {
   return (
     <section id="projects">
       <div>
-        <h1>
+        <h2>
           <HiOutlineLightBulb className="mb-2 mb-sm-3 me-2" />
           My Projects
-        </h1>
+        </h2>
         <p className="section-description">
           I am dedicated to self-development and professional growth and
           <br />

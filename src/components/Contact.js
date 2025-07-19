@@ -51,10 +51,10 @@ function Contact() {
   return (
     <section id="contact">
       <div>
-        <h1>
+        <h2>
           <MdOutlineContactMail className="mb-2 mb-sm-3 me-2" />
           Contact Me
-        </h1>
+        </h2>
       </div>
       <Container>
         <Row className="d-flex justify-content-center mt-3">
@@ -98,7 +98,7 @@ function Contact() {
           <Col md="5" className="py-3 ps-lg-4">
             <form name="contact" onSubmit={handleSubmit}>
               <input type="hidden" name="form-name" value="contact" />
-              <h2>Hello!</h2>
+              <h3>Hello!</h3>
               <p>
                 I am looking forward to this great opportunity
                 to share my passion and skills with you.

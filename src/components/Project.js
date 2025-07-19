@@ -6,7 +6,7 @@ function Project({image, subtitle, title, description, code}) {
     <Col lg="5" className="position-relative m-2 p-0">
       <div className="description">
         <h5>{subtitle}</h5>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{description}</p>
         <div>
           <Button className="px-5" variant="outline-success" href={code} target="_blank">

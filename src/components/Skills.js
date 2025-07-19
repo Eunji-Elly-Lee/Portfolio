@@ -8,10 +8,10 @@ function Skills() {
   return (
     <section id="skills">
       <div>
-        <h1>
+        <h2>
           <GrTechnology className="mb-2 mb-sm-3 me-2" />
           My Skills
-        </h1>
+        </h2>
         <p className="section-description">
           I truly enjoy writing code and developing websites and web
           applications
