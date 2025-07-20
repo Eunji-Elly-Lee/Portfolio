@@ -12,12 +12,9 @@ function Skills() {
           <GrTechnology className="mb-2 mb-sm-3 me-2" />
           My Skills
         </h2>
-        <p className="section-description">
+        <p className="section-description mx-auto mb-4 mb-md-5">
           I truly enjoy writing code and developing websites and web
-          applications
-          <br />
-          using various languages, tools, and databases.
-          <br />
+          applications using various languages, tools, and databases.
           I'm also very excited to continue learning new skills.
         </p>
       </div>

@@ -12,9 +12,8 @@ function Projects() {
           <HiOutlineLightBulb className="mb-2 mb-sm-3 me-2" />
           My Projects
         </h2>
-        <p className="section-description">
+        <p className="section-description mx-auto mb-4 mb-md-5">
           I am dedicated to self-development and professional growth and
-          <br />
           have continuously worked on projects using various languages.
         </p>
       </div>
