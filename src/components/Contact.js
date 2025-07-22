@@ -52,7 +52,7 @@ function Contact() {
     <section id="contact">
       <div>
         <h2>
-          <MdOutlineContactMail className="mb-2 mb-sm-3 me-2" />
+          <MdOutlineContactMail className="mb-2 me-2" />
           Contact Me
         </h2>
       </div>

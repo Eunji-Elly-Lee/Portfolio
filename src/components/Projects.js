@@ -9,7 +9,7 @@ function Projects() {
     <section id="projects">
       <div>
         <h2>
-          <HiOutlineLightBulb className="mb-2 mb-sm-3 me-2" />
+          <HiOutlineLightBulb className="mb-2 me-2" />
           My Projects
         </h2>
         <p className="section-description mx-auto mb-4 mb-md-5">

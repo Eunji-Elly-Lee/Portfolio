@@ -9,7 +9,7 @@ function Skills() {
     <section id="skills">
       <div>
         <h2>
-          <GrTechnology className="mb-2 mb-sm-3 me-2" />
+          <GrTechnology className="mb-2 me-2" />
           My Skills
         </h2>
         <p className="section-description mx-auto mb-4 mb-md-5">
