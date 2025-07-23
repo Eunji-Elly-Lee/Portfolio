@@ -41,6 +41,32 @@ p {
   transition: 0.5s;
 }
 
+.button {
+  width: 160px;
+  border: none;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.button:hover {
+  background-color: rgb(24, 24, 24);
+  color: #c0d7f4;
+  transition: 0.5s;
+}
+
+.primary {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.secondary {
+  background-color: transparent;
+  outline: 3px solid rgba(0, 0, 0, 0.5);
+  outline-offset: -2px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+}
+
 @keyframes backgroundChange {
   0% {
     background-position: 0 0;

@@ -138,7 +138,7 @@ function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-              <Button type="submit" className="submit-button mt-2 py-3">
+              <Button type="submit" className="button primary mt-2 py-3">
                 Submit
               </Button>
             </form>
