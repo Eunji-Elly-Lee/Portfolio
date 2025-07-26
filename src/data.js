@@ -8,7 +8,7 @@ import {
   FaAws,
   FaBootstrap,
   FaGithub,
-  FaStripe,
+  FaStripe
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -23,71 +23,52 @@ import {
   SiNetlify,
   SiTailwindcss,
   SiJirasoftware,
-  SiGoogleanalytics,
+  SiGoogleanalytics
 } from "react-icons/si";
 
 export const projects = [
   {
-    title: "Restaurant Reviews",
-    subtitle: "React / Node / Express / Bootstrap /MongoDB",
-    description:
-      "Reviewing restaurants system with search functionality and user authentication",
-    image: "./assets/restaurants.png",
-    code: "https://github.com/Eunji-Elly-Lee/Restaurant-Reviews",
-  },
-  {
-    title: "Kimbap Ordering",
-    subtitle: "React / Node / Express / Bootstrap / Firebase / Stripe",
-    description:
-      "Online Kimbap ordering system with a secure and convenient payment gateway using Stripe",
+    id: "kimbap-ordering",
+    title: "Online Kimbap Ordering Platform",
+    stack: "React.js / Node.js / Express.js / Bootstrap / Firebase / Stripe / Netlify",
     image: "./assets/food.png",
-    code: "https://github.com/Eunji-Elly-Lee/Gimbap",
+    github: "https://github.com/Eunji-Elly-Lee/Gimbap"
   },
   {
-    title: "Medical Appointment",
-    subtitle: "Java Servlet / JSP / JavaMail / MySQL",
-    description:
-      "Clinic management system featuring online appointment booking and secure staff data management",
-    image: "./assets/medical.png",
-    code: "https://github.com/Eunji-Elly-Lee/Medical-Appointment",
+    id: "restaurant-reviews",
+    title: "Restaurant Reviews Web Application",
+    stack: "React.js / Node.js / Express.js / Bootstrap / MongoDB",
+    image: "./assets/restaurants.png",
+    github: "https://github.com/Eunji-Elly-Lee/Restaurant-Reviews",
   },
   {
-    title: "Pang",
-    subtitle: "Python",
-    description: "Pang - Arcade Video Game in Python",
-    image: "./assets/pang.png",
-    code: "https://github.com/Eunji-Elly-Lee/Pang-In-Python",
-  },
-  {
-    title: "Search Open Dataset",
-    subtitle: "JavaScript / AJAX / JSON Parsing / Netlify",
-    description:
-      "Search page interface for querying city operations data, sourced from the city of Calgary",
+    id: "search-dataset",
+    title: "City of Calgary Open Data Search",
+    stack: "JavaScript / AJAX / JSON Parsing / Bootstrap/ Netlify",
     image: "./assets/searching.png",
-    code: "https://github.com/Eunji-Elly-Lee/Search-Dataset",
+    github: "https://github.com/Eunji-Elly-Lee/Search-Dataset",
   },
   {
-    title: "Inventory Management",
-    subtitle: "Java Servlet / JSP / JavaMail / Bootstrap / MySQL",
-    description:
-      "Role-based inventory management system through secure access control and user-specific functionalities",
-    image: "./assets/inventory.png",
-    code: "https://github.com/Eunji-Elly-Lee/Inventory-Management",
+    id: "medical-appointment",
+    title: "Medical Clinic Appointment System (Team Project)",
+    stack: "Java Servlet / JSP / JavaMail / MySQL",
+    image: "./assets/medical.png",
+    github: "https://github.com/Eunji-Elly-Lee/Medical-Appointment",
   },
   {
-    title: "Hangman",
-    subtitle: "Java",
-    description: "Hangman game in Java",
+    id: "pang-game",
+    title: "Pang Game with Python",
+    stack: "Python / Pygame",
+    image: "./assets/pang.png",
+    github: "https://github.com/Eunji-Elly-Lee/Pang-In-Python",
+  },
+  {
+    id: "hangman-game",
+    title: "Hangman Game with GUI",
+    stack: "Java / JavaFX",
     image: "./assets/hangman.png",
-    code: "https://github.com/Eunji-Elly-Lee/Hangman-In-Java",
-  },
-  {
-    title: "Tic Tac Toe",
-    subtitle: "Java",
-    description: "Tic Tac Toe game in Java",
-    image: "./assets/tictactoe.png",
-    code: "https://github.com/Eunji-Elly-Lee/TicTacToe-In-Java",
-  },
+    github: "https://github.com/Eunji-Elly-Lee/Hangman-In-Java",
+  }
 ];
 
 export const skills = [
