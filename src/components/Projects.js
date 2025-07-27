@@ -1,10 +1,12 @@
 import { HiOutlineLightBulb } from "react-icons/hi";
-import { Container, Row } from 'react-bootstrap';
+import { translations } from "../translations";
 import { projects } from "../data";
 import './Projects.css';
 import Project from "./Project"
 
-function Projects() {
+function Projects({ useKorean }) {
+  const getTrans = (key) => translations.projects[key][useKorean ? "ko" : "en"];
+
   return (
     <section id="projects">
       <div>
@@ -13,24 +15,19 @@ function Projects() {
           My Projects
         </h2>
         <p className="section-description mx-auto mb-4 mb-md-5">
-          I am dedicated to self-development and professional growth and
-          have continuously worked on projects using various languages.
+          {getTrans("description")}
         </p>
       </div>
-      <Container>
-        <Row className="justify-content-center">
-          {projects.map((project) => (
-            <Project
-              key={project.title}
-              image={project.image}
-              subtitle={project.subtitle}
-              title={project.title}
-              description={project.description}
-              code={project.code}
-            />
-          ))}
-        </Row>
-      </Container>
+      {projects.map((project) => (
+        <Project
+          key={project.id}
+          title={project.title}
+          stack={project.stack}
+          image={project.image}
+          description={getTrans(project.id)}
+          github={project.github}
+        />
+      ))}
     </section>
   );
 }
