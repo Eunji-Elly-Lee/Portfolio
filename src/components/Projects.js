@@ -26,6 +26,7 @@ function Projects({ useKorean }) {
           image={project.image}
           description={getTrans(project.id)}
           github={project.github}
+          live={project.live || null}
         />
       ))}
     </section>

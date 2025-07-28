@@ -27,6 +27,20 @@ export const translations = {
       ].join(" "),
       ko: "자기 개발과 전문성 향상을 위해 꾸준히 다양한 언어로 프로젝트를 진행해 왔습니다."
     },
+    "cacart-ecommerce": {
+      en: [
+        "An e-commerce web application for purchasing products from various categories in one place.",
+        "I developed the item detail and order history pages, deployed the backend, and adjusted the responsive layout.",
+        "Built with Next.js and Nest.js, using Supabase (PostgreSQL) for data,",
+        "and deployed via Vercel (frontend) and Render (backend)."
+      ].join(" "),
+      ko: [
+        "다양한 카테고리의 상품을 한 곳에서 간편하게 구매할 수 있도록 설계된 이커머스 웹 애플리케이션입니다.",
+        "상품 상세 페이지 및 주문 내역 페이지의 개발, 백엔드 배포, 그리고 전반적인 반응형 레이아웃 조정을 담당했습니다.",
+        "Next.js와 Nest.js를 기반으로 개발되었고, Supabase(PostgreSQL)를 사용해 데이터를 관리하며,",
+        "프론트엔드는 Vercel, 백엔드는 Render에 배포되었습니다."
+      ].join(" ")
+    },
     "kimbap-ordering": {
       en: [
         "A web application for placing Kimbap pick-up orders by selecting preferred menu, location, and time.",
@@ -35,7 +49,7 @@ export const translations = {
         "Built with React, Node.js, and Firebase, and deployed on Netlify."
       ].join(" "),
       ko: [
-        "사용자가 원하는 김밥 메뉴와 수령 장소, 시간을 선택해 김밥 픽업 주문을 할 수 있는 웹 애플리케이션입니다.",
+        "원하는 김밥 메뉴와 수령 장소, 시간을 선택해 김밥 픽업 주문을 할 수 있는 웹 애플리케이션입니다.",
         "관리자는 메뉴 및 수령 장소를 직접 등록 및 관리하고, 주문 내역을 모니터링할 수 있습니다.",
         "Stripe를 통한 안전한 결제 기능과 Firebase 기반의 인증 및 데이터 저장 기능을 구현했습니다.",
         "React, Node.js, Firebase로 개발하고 Netlify에 배포했습니다."

@@ -28,11 +28,19 @@ import {
 
 export const projects = [
   {
+    id: "cacart-ecommerce",
+    title: "Cacart E-commerce Web Application (Team Project)",
+    stack: "Next.js / TypeScript / Nest.js / TailwindCSS / Supabase / Stripe / Vercel",
+    image: "./assets/cacart.png",
+    github: "https://github.com/Snow-Penguins",
+    live: "https://ca-cart-frontend.vercel.app"
+  }, {
     id: "kimbap-ordering",
     title: "Online Kimbap Ordering Platform",
     stack: "React.js / Node.js / Express.js / Bootstrap / Firebase / Stripe / Netlify",
     image: "./assets/food.png",
-    github: "https://github.com/Eunji-Elly-Lee/Gimbap"
+    github: "https://github.com/Eunji-Elly-Lee/Gimbap",
+    live: "https://elly-kimbap.netlify.app"
   },
   {
     id: "restaurant-reviews",
@@ -47,6 +55,7 @@ export const projects = [
     stack: "JavaScript / AJAX / JSON Parsing / Bootstrap/ Netlify",
     image: "./assets/searching.png",
     github: "https://github.com/Eunji-Elly-Lee/Search-Dataset",
+    live: "https://elly-search-dataset.netlify.app"
   },
   {
     id: "medical-appointment",
