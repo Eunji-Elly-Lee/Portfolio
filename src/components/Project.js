@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Project({ title, stack, image, description, github, live }) {
   return (
-    <Container className="project-container my-5 my-lg-4 p-3 pe-xl-4 shadow-sm">
+    <Container className="project-container my-5 p-3 pe-xl-4 shadow-sm">
       <h3>{title}</h3>
       <Row>
         <Col lg="4" xxl="5">
