@@ -23,9 +23,9 @@ export const translations = {
     description: {
       en: [
         "I am dedicated to self-development and professional growth",
-        "and have continuously worked on projects using various languages."
+        "and have consistently worked on projects using various languages."
       ].join(" "),
-      ko: "자기 개발과 전문성 향상을 위해 꾸준히 다양한 언어로 프로젝트를 진행해 왔습니다."
+      ko: "자기 개발과 전문성 향상을 위해 꾸준히 다양한 언어를 활용해 프로젝트를 진행해 왔습니다."
     },
     "cacart-ecommerce": {
       en: [
@@ -124,4 +124,13 @@ export const translations = {
       ].join(" ")
     }
   },
+  skills: {
+    description: {
+      en: [
+        "I enjoy developing with various languages, tools, and databases,",
+        "and strive to continuously learn new technologies and grow as a developer."
+      ].join(" "),
+      ko: "다양한 언어, 도구, 데이터베이스를 활용한 개발을 즐기며, 꾸준히 새로운 기술을 배우고 성장하기 위해 노력하고 있습니다."
+    }
+  }
 };

@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import {
   SiNextdotjs,
+  SiThreedotjs,
   SiExpress,
   SiNestjs,
   SiTypescript,
@@ -20,6 +21,7 @@ import {
   SiPostgresql,
   SiSupabase,
   SiFirebase,
+  SiVercel,
   SiNetlify,
   SiTailwindcss,
   SiJirasoftware,
@@ -80,28 +82,36 @@ export const projects = [
   }
 ];
 
-export const skills = [
-  { icon: FaJs, title: "JavaScript" },
-  { icon: FaReact, title: "React.js" },
-  { icon: SiNextdotjs, title: "Next.js" },
-  { icon: FaNode, title: "Node.js" },
-  { icon: SiExpress, title: "Express.js" },
-  { icon: SiNestjs, title: "Nest.js" },
-  { icon: SiTypescript, title: "Typescript" },
-  { icon: FaJava, title: "Java" },
-  { icon: FaPython, title: "Python" },
-  { icon: FaDatabase, title: "SQL" },
-  { icon: SiMysql, title: "MySQL" },
-  { icon: SiMongodb, title: "MongoDB" },
-  { icon: SiPostgresql, title: "PostgreSQL" },
-  { icon: SiSupabase, title: "Supabase" },
-  { icon: SiFirebase, title: "Firebase" },
-  { icon: FaAws, title: "AWS" },
-  { icon: SiNetlify, title: "Netlify" },
-  { icon: FaBootstrap, title: "Bootstrap" },
-  { icon: SiTailwindcss, title: "Tailwind" },
-  { icon: FaGithub, title: "GitHub" },
-  { icon: SiJirasoftware, title: "Jira" },
-  { icon: FaStripe, title: "Stripe" },
-  { icon: SiGoogleanalytics, title: "Google Analytics" },
-];
+export const skills = {
+  frontend: [
+    { icon: FaJs, title: "JavaScript" },
+    { icon: SiTypescript, title: "Typescript" },
+    { icon: FaReact, title: "React.js" },
+    { icon: SiNextdotjs, title: "Next.js" },
+    { icon: SiThreedotjs, title: "Three.js" },
+    { icon: FaBootstrap, title: "Bootstrap" },
+    { icon: SiTailwindcss, title: "Tailwind" }
+  ],
+  backend: [
+    { icon: FaNode, title: "Node.js" },
+    { icon: SiExpress, title: "Express.js" },
+    { icon: SiNestjs, title: "Nest.js" },
+    { icon: FaJava, title: "Java" },
+    { icon: FaPython, title: "Python" },
+    { icon: FaDatabase, title: "SQL" },
+    { icon: SiMysql, title: "MySQL" },
+    { icon: SiPostgresql, title: "PostgreSQL" },
+    { icon: SiMongodb, title: "MongoDB" },
+    { icon: SiFirebase, title: "Firebase" },
+    { icon: SiSupabase, title: "Supabase" }
+  ],
+  tools: [
+    { icon: SiVercel, title: "Vercel" },
+    { icon: SiNetlify, title: "Netlify" },
+    { icon: FaAws, title: "AWS" },
+    { icon: FaStripe, title: "Stripe" },
+    { icon: FaGithub, title: "GitHub" },
+    { icon: SiJirasoftware, title: "Jira" },
+    { icon: SiGoogleanalytics, title: "Google Analytics" }
+  ]
+};
