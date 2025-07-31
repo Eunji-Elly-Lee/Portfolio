@@ -2,9 +2,8 @@ import PropTypes from "prop-types";
 
 function TechStack({ skills }) {
   return (
-    <div
-      className="skills mt-3 mt-lg-0 d-flex flex-wrap justify-content-center justify-content-md-start"
-    >
+    <div className="skill-container mt-3 mt-lg-0 d-flex flex-wrap
+      justify-content-center justify-content-lg-start">
       {skills.map((skill, index) => {
         const Icon = skill.icon;
         return (
