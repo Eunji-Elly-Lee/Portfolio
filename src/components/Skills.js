@@ -6,13 +6,13 @@ import "./Skills.css";
 import TechStack from "./TechStack";
 
 function Skills({ useKorean }) {
-  const getTrans = (key) => translations.projects[key][useKorean ? "ko" : "en"];
+  const getTrans = (key) => translations.skills[key][useKorean ? "ko" : "en"];
 
   return (
     <section id="skills">
       <div>
         <h2>
-          <GrTechnology className="mb-2 me-2" />
+          <GrTechnology className="mb-1 mb-lg-2 me-2" />
           My Skills
         </h2>
         <p className="section-description mx-auto mb-4 mb-md-5">
