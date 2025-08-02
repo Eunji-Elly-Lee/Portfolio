@@ -3,19 +3,22 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import { MdOutlineContactMail } from "react-icons/md";
 import GoogleMapReact from 'google-map-react';
 import './Contact.css';
+import { translations } from "../translations";
 import Marker from "./Marker";
 
-function Contact() {
+function Contact({ useKorean }) {
+  const getTrans = (key) => translations.contact[key][useKorean ? "ko" : "en"];
+
   const defaultProps = {
     center: {
-      lat: 51.119,
-      lng: -114.195,
+      lat: 37.670,
+      lng: 127.046,
     },
     location: {
-      lat: 51.12031864514217,
-      lng: -114.19514482867221,
+      lat: 37.689862,
+      lng: 127.046085,
     },
-    zoom: 14
+    zoom: 11
   };
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -39,27 +42,27 @@ function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() =>
-        alert("Message sent!"),
-        setName(""),
-        setEmail(""),
-        setMessage(""),
-      )
+      .then(() => {
+        alert("Message sent!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      })
       .catch((error) => alert(error));
   }
 
   return (
     <section id="contact">
       <div>
-        <h2>
-          <MdOutlineContactMail className="mb-2 me-2" />
+        <h2 className="text-center">
+          <MdOutlineContactMail className="mb-1 mb-lg-2 me-2" />
           Contact Me
         </h2>
       </div>
-      <Container>
-        <Row className="d-flex justify-content-center mt-3">
-          <Col md="7" lg="6" className="map-wrap ms-lg-4">
-            <div className="map">
+      <Container className="mt-5 pt-lg-3">
+        <Row>
+          <Col lg="5" className="position-relative ps-lg-4">
+            <div className="map w-100 mx-auto overflow-hidden">
               <GoogleMapReact
                 bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAP_URL_KEY }}
                 defaultCenter={defaultProps.center}
@@ -71,42 +74,23 @@ function Contact() {
                 />
               </GoogleMapReact>
             </div>
-            <Container className="info pt-3 rounded-2">
-              <Row>
-                <Col xs="6" className="align-self-center">
-                  <h4>ADDRESS</h4>
-                  <h5>ADDRESS</h5>
-                  <p>
-                    1315 Ranchlands Rd NW
-                    <br />
-                    Calgary, AB T3G 1N2
-                  </p>
-                </Col>
-                <Col>
-                  <h4>EMAIL</h4>
-                  <h5>EMAIL</h5>
-                  <a href="mailto:ellylee2020@gmail.com">
-                    ellylee2020@gmail.com
-                  </a>
-                  <h4>PHONE</h4>
-                  <h5>PHONE</h5>
-                  <p>825-365-9828</p>
-                </Col>
-              </Row>
-            </Container>
-          </Col>
-          <Col md="5" className="py-3 ps-lg-4">
-            <form name="contact" onSubmit={handleSubmit}>
-              <input type="hidden" name="form-name" value="contact" />
-              <h3>Hello!</h3>
-              <p>
-                I am looking forward to this great opportunity
-                to share my passion and skills with you.
+            <div className="email-container p-3 text-md-center text-lg-start">
+              <p className="m-0">
+                <span>LOCATION:</span> Seoul, Korea
               </p>
-              <div>
-                <label htmlFor="name">
-                  Name
-                </label>
+              <p className="m-0">
+                <span>EMAIL: </span>
+                <a href="mailto:ellylee2020@gmail.com">ellylee2020@gmail.com</a>
+              </p>
+            </div>
+          </Col>
+          <Col lg="7" className="mt-4 mt-lg-0 px-md-4">
+            <h3>Hello!</h3>
+            <p>{getTrans("description")}</p>
+            <form data-netlify="true" name="contact" onSubmit={handleSubmit} className="mt-4 pe-lg-5">
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="form-row my-2 d-flex align-items-center">
+                <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   id="name"
@@ -115,10 +99,8 @@ function Contact() {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div>
-                <label htmlFor="email">
-                  Email
-                </label>
+              <div className="form-row my-2 d-flex align-items-center">
+                <label htmlFor="email">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -127,10 +109,8 @@ function Contact() {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div>
-                <label htmlFor="message">
-                  Message
-                </label>
+              <div className="form-row my-2 d-flex align-items-center">
+                <label htmlFor="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
@@ -138,7 +118,7 @@ function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-              <Button type="submit" className="button primary mt-2 py-3">
+              <Button type="submit" className="button primary mt-3 py-3">
                 Submit
               </Button>
             </form>

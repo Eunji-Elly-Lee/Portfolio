@@ -132,5 +132,11 @@ export const translations = {
       ].join(" "),
       ko: "다양한 언어, 도구, 데이터베이스를 활용한 개발을 즐기며, 꾸준히 새로운 기술을 배우고 성장하기 위해 노력하고 있습니다."
     }
+  },
+  contact: {
+    description: {
+      en: "I am looking forward to this great opportunity to share my passion and skills with you.",
+      ko: "열정과 역량을 나눌 수 있는 좋은 기회를 기다리고 있습니다."
+    }
   }
 };

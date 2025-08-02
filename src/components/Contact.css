@@ -1,127 +1,56 @@
-h4 {
-  margin: 7px 0 0;
-}
-
-h5 {
-  margin: 7px 0 0;
-  display: none;
-}
-
-label {
-  width: 68px;
-  margin-bottom: 10px;
-  vertical-align: top;
-}
-
-input,
-textarea {
-  width: 75%;
-  border: 0.01em solid black;
-  border-radius: 3px;
-}
-
 #contact {
   padding: 100px 5% 70px 7%;
 }
 
-#contact h2 {
-  text-align: center;
-}
-
 .map {
-  width: 100%;
+  max-width: 500px;
   height: 280px;
-  margin: 2px 0 15px;
-  inset: 0;
-  border-radius: 3px;
-  overflow: hidden;
+  border-radius: 10px;
 }
 
-.info p {
-  padding-top: 5px;
+.email-container a {
+  color: black;
+}
+
+.form-row label {
+  flex: 0 0 100px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 5px;
+  flex: 1;
+  border: 0.01em solid black;
+  border-radius: 7px;
 }
 
 @media screen and (min-width: 768px) {
-  h4 {
-    display: none;
-  }
-
-  h5 {
-    display: block;
-  }
-
   #contact {
     padding: 130px 0 80px;
-  }
-
-  .map-wrap {
-    position: relative;
-  }
-
-  .map {
-    position: absolute;
-    height: 100%;
-    margin: 0px;
-  }
-
-  .info {
-    position: relative;
-    width: 93.6%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(169, 215, 255);
-    margin: 49% 0 0;
-  }
-
-  .info p,
-  .info a {
-    font-size: 13px;
-    font-weight: lighter;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .info {
-    width: 86.2%;
-    margin-top: 43%;
+  .map {
+    max-width: 100%;
+    height: 100%;
   }
 
-  .info p,
-  .info a {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  #contact {
-    width: 90%;
-    margin: 0 auto;
+  .email-container {
+    position: absolute;
+    left: 7%;
+    bottom: 12px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 7px;
+    color: #c0d7f4;
   }
 
-  .info {
-    width: 80.5%;
-    margin-top: 37%;
+  .email-container p {
+    font-size: 17px;
   }
 
-  .info p,
-  .info a {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 1218px) {
-  .info {
-    width: 79.4%;
-    margin-top: 30%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  #contact {
-    width: 85%;
-  }
-
-  .info {
-    width: 73%;
-    margin-top: 27%;
+  .email-container a {
+    color: #c0d7f4;
   }
 }
