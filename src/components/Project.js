@@ -16,7 +16,7 @@ function Project({ title, stack, image, description, github, live }) {
           </div>
         </Col>
         <Col lg="8" xxl="7">
-          <div className="description-card h-100 mt-3 mt-lg-2 text-start overflow-scroll">
+          <div className="description-card h-100 mt-3 mt-lg-2 text-start overflow-hidden">
             <p className="description">{description}</p>
             <p className="fs-6">{stack}</p>
             <div>

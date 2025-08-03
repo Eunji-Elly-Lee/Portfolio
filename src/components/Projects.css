@@ -25,14 +25,14 @@
 
 @media screen and (min-width: 992px) {
     .project-container {
-        height: 400px;
+        height: 410px;
     }
 
     .screenshot {
-        height: 315px;
+        height: 322px;
     }
 
     .description-card {
-        max-height: 315px;
+        max-height: 322px;
     }
 }
