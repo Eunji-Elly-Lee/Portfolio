@@ -74,7 +74,7 @@ function Contact({ useKorean }) {
                 />
               </GoogleMapReact>
             </div>
-            <div className="email-container p-3 text-md-center text-lg-start">
+            <div className="map-sub-container p-3 text-md-center text-lg-start">
               <p className="m-0">
                 <span>LOCATION:</span> Seoul, Korea
               </p>

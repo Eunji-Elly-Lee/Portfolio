@@ -8,7 +8,7 @@
   border-radius: 10px;
 }
 
-.email-container a {
+.map-sub-container a {
   color: black;
 }
 
@@ -38,7 +38,7 @@
     height: 100%;
   }
 
-  .email-container {
+  .map-sub-container {
     position: absolute;
     left: 7%;
     bottom: 12px;
@@ -47,11 +47,11 @@
     color: #c0d7f4;
   }
 
-  .email-container p {
+  .map-sub-container p {
     font-size: 17px;
   }
 
-  .email-container a {
+  .map-sub-container a {
     color: #c0d7f4;
   }
 }
