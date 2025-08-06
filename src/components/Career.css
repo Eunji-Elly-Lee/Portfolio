@@ -1,0 +1,28 @@
+#career {
+    padding: 90px 5% 0 7%;
+    text-align: center;
+}
+
+.experience-container {
+    margin-top: 60px;
+}
+
+.experience-sub-container {
+    column-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #career {
+        padding: 120px 0 0;
+    }
+
+    .experience-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .experience-container {
+        width: 65%;
+    }
+}

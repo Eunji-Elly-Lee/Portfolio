@@ -20,7 +20,9 @@ h3 {
   font-weight: bold;
 }
 
-p {
+p,
+ul,
+li {
   font-size: 18px;
 }
 
@@ -83,7 +85,9 @@ p {
 }
 
 @media screen and (min-width: 576px) {
-  p {
+  p,
+  ul,
+  li {
     font-size: 20px;
   }
 

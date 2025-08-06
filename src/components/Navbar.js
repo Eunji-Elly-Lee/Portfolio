@@ -84,6 +84,9 @@ function NavBar({ useKorean, setUseKorean, expanded, setExpanded }) {
             <Nav.Link as="button" type="button" onClick={() => onScrollToSection("about")}>
               <span>About</span>
             </Nav.Link>
+            <Nav.Link as="button" type="button" onClick={() => onScrollToSection("career")}>
+              <span>Career</span>
+            </Nav.Link>
             <Nav.Link as="button" type="button" onClick={() => onScrollToSection("projects")}>
               <span>Projects</span>
             </Nav.Link>

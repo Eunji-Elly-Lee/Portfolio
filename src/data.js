@@ -28,6 +28,25 @@ import {
   SiGoogleanalytics
 } from "react-icons/si";
 
+export const experiences = [
+  {
+    id: "robim",
+    company: "RoBIM Technologies Inc.",
+    role: "Full-Stack Developer",
+    location: "Edmonton, Canada (Remote from Seoul, South Korea)",
+    period: "Mar 2025 - Present",
+    stack: "Next.js / TypeScript / Three.js / PostgreSQL / Vercel / AWS"
+  },
+  {
+    id: "actibeety",
+    company: "Actibeety",
+    role: "Software Developer",
+    location: "Vancouver, Canada (Remote from Calgary, Canada)",
+    period: "Apr 2023 - Dec 2024",
+    stack: "Next.js / TypeScript / Firebase / Vercel"
+  }
+];
+
 export const projects = [
   {
     id: "cacart-ecommerce",

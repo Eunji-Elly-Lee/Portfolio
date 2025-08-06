@@ -19,6 +19,50 @@ export const translations = {
       ko: "함께 멋진 것을 만들어 봅시다!"
     }
   },
+  career: {
+    description: {
+      en: [
+        "I have gained valuable experience through diverse projects and roles,",
+        "continuously improving my skills and delivering meaningful results."
+      ].join(" "),
+      ko: "다양한 프로젝트와 역할을 통해 실무 경험을 쌓아 왔으며 의미 있는 성과를 만들어 왔습니다."
+    },
+    "robim": {
+      en: [
+        ["Led development of a Next.js-based web simulation platform,",
+          "replacing Unity to improve accessibility and eliminate installation barriers"
+        ].join(""),
+        "Built a complete user authentication system (NextAuth, OAuth, email verification, password reset, approval workflows)",
+        "Designed and developed a project dashboard with role-based permissions, project search/filtering, and sharing features",
+        "Created data models and CRUD operations for scenes and 3D models, with advanced Three.js-based management tools",
+        "Designed PostgreSQL schema on Neon, and managed deployment/testing environments via Vercel"
+      ],
+      ko: [
+        "Unity 기반 시뮬레이터의 설치·접근성 문제 해결을 위한 Next.js 기반 웹 시뮬레이션 플랫폼 기획·개발 주도",
+        "NextAuth 기반 이메일/비밀번호·OAuth 통합 인증, 가입 승인, 비밀번호 초기화 등 인증 전 과정 설계·구현",
+        "역할 기반 권한 분리, 프로젝트 검색·필터, 협업 기능을 갖춘 프로젝트 관리 페이지 설계 및 개발",
+        "씬·모델 데이터 구조 설계 및 CRUD 구현, Three.js 기반 3D 모델 관리 기능 개발",
+        "Neon(PostgreSQL on Vercel) DB 스키마 설계, 테스트·배포 환경 구성 및 운영 관리"
+      ]
+    },
+    "actibeety": {
+      en: [
+        ["Developed a Next.js & Firebase activity management web app",
+          "enhancing signup flow with email verification, password reset, and OAuth login"
+        ].join(""),
+        "Delivered intuitive activity creation/search/filter features, achieving 80%+ user satisfaction",
+        "Built real-time chat with Firebase Snapshot, sustaining over 50% active use during events",
+        "Optimized responsive design, maintaining 60%+ mobile user base"
+      ],
+      ko: [
+        "Next.js·Firebase 기반 액티비티 관리 웹 앱 설계 및 개발",
+        "이메일 인증·비밀번호 재설정·OAuth 연동을 통한 가입 경험 개선, 신규 가입률 향상",
+        "액티비티 생성·검색·필터·카드 UI 구현으로 사용자 만족도 80% 이상 달성",
+        "Firebase Snapshot 기반 실시간 채팅 기능 구축, 챌린지 기간 사용자 50% 이상 지속 이용",
+        "반응형 디자인 최적화로 모바일 사용자 비중 60% 이상 유지"
+      ]
+    }
+  },
   projects: {
     description: {
       en: [
