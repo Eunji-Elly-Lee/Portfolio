@@ -1,0 +1,12 @@
+.top-button {
+    bottom: 30px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+}
+
+.top-button:hover {
+    background-color: rgb(24, 24, 24);
+    color: #c0d7f4;
+    transition: 0.5s;
+}

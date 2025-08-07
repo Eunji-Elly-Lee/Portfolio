@@ -5,6 +5,7 @@ import Career from "./components/Career";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import BackToTop from "./components/BackToTop";
 
 function App() {
   const [useKorean, setUseKorean] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Skills useKorean={useKorean} />
         <Contact useKorean={useKorean} />
       </main>
+      <BackToTop />
     </div>
   );
 }
